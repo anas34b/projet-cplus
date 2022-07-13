@@ -1,0 +1,4 @@
+<map id="map" name="map">
+<area shape="rect" id="node1" title=" " alt="" coords="11,95,62,121"/>
+<area shape="rect" id="node2" href="$classdonne.html" title="class pour stocker les cordonnees des textures de la map" alt="" coords="5,5,68,32"/>
+</map>

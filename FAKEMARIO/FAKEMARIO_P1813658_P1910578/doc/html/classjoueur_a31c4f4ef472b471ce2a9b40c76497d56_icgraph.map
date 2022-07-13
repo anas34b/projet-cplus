@@ -1,0 +1,5 @@
+<map id="joueur::init_joueur" name="joueur::init_joueur">
+<area shape="rect" id="node1" title="linitialisation des attribus du joueur:SDL_surface, SDL_texture," alt="" coords="323,5,463,32"/>
+<area shape="rect" id="node2" href="$classfenetre.html#a6601e4c57e3f12564544aaaaee346dd8" title="cette procedure a pour objectif d&#39;afficher la fenetre et dans la dernier il y a la boucle du jeux" alt="" coords="108,5,275,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,60,32"/>
+</map>

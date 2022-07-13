@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="mafenetre_8cpp" kind="file" language="C++">
+    <compoundname>mafenetre.cpp</compoundname>
+    <includes refid="biblio_8h" local="yes">biblio.h</includes>
+    <includes refid="mafenetre_8h" local="yes">mafenetre.h</includes>
+    <includes refid="joueur_8h" local="yes">joueur.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>SDL2/SDL_mixer.h</label>
+      </node>
+      <node id="9">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>mafenetre.h</label>
+        <link refid="mafenetre_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="13">
+        <label>unistd.h</label>
+      </node>
+      <node id="12">
+        <label>time.h</label>
+      </node>
+      <node id="7">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>src/mafenetre.cpp</label>
+        <link refid="mafenetre_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>biblio.h</label>
+        <link refid="biblio_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>joueur.h</label>
+        <link refid="joueur_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>SDL2/SDL_ttf.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&quot;<ref refid="biblio_8h" kindref="compound">biblio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="mafenetre_8h" kindref="compound">mafenetre.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="joueur_8h" kindref="compound">joueur.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfenetre_1a6ecdf7dbb458321415297273b8e24e4f" kindref="member">fenetre::init_window</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>titre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(0<sp/>!=<sp/>SDL_Init(SDL_INIT_VIDEO|SDL_INIT_JOYSTICK)){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;erreur<sp/>d&apos;initialisation&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>SDL_GetError()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;initialisation<sp/>réussi&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>window<sp/>=<sp/>SDL_CreateWindow(titre,<sp/>SDL_WINDOWPOS_UNDEFINED,<sp/>SDL_WINDOWPOS_UNDEFINED,<sp/>w,<sp/>h,<sp/><sp/>SDL_WINDOW_SHOWN);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NULL<sp/>==<sp/>window)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Erreur<sp/>SDL_CreateWindow<sp/>:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>SDL_GetError();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;la<sp/>creation<sp/>de<sp/>la<sp/>fenetre<sp/>est<sp/>bien<sp/>faite&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>rendere<sp/>=SDL_CreateRenderer(window,<sp/>-1,SDL_RENDERER_ACCELERATED);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NULL==rendere)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;un<sp/>probleme<sp/>dean<sp/>la<sp/>creation<sp/>du<sp/>rendere&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>SDL_GetError()&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;notre<sp/>rendere<sp/>est<sp/>bien<sp/>creer&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>endl<sp/>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">SDL_Renderer*<sp/><ref refid="classfenetre_1a386e988096055a2c489a14142a614e23" kindref="member">fenetre::getRendere</ref>(){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rendere;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfenetre_1a6601e4c57e3f12564544aaaaee346dd8" kindref="member">fenetre::draw_window</ref>(SDL_Renderer*<sp/>render){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_JoystickEventState(SDL_ENABLE);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmap" kindref="compound">map</ref><sp/><ref refid="classmap" kindref="compound">map</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a1cb87acfa6bd0ea8004fae886dbbe251" kindref="member">init_map</ref>(render);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a31c4f4ef472b471ce2a9b40c76497d56" kindref="member">init_joueur</ref>(render);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isrunning=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Event<sp/>event;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a4aa275fd8b35b320895744ba6cc7c547" kindref="member">draw_player</ref>(render);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(isrunning){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(SDL_PollEvent(&amp;event)){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//le<sp/>programme<sp/>va<sp/>faire<sp/>ce<sp/>qui<sp/>est<sp/>donne<sp/>dans<sp/>ces<sp/>fonction<sp/>faites<sp/>par<sp/>l&apos;utilisateur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(event.type){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//si<sp/>l&apos;utilisateur<sp/>appuie<sp/>sur<sp/>x<sp/>pour<sp/>quitter<sp/>la<sp/>fenetre</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_WINDOWEVENT:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(event.window.event<sp/>==<sp/>SDL_WINDOWEVENT_CLOSE)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isrunning<sp/>=<sp/>SDL_FALSE;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//si<sp/>l&apos;utilisateur<sp/>appuisur<sp/>un<sp/>des<sp/>fleche<sp/>pour<sp/>bouger<sp/>le<sp/>joueur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SDL_KEYDOWN:<sp/></highlight><highlight class="comment">//<sp/>Un<sp/>événement<sp/>de<sp/>type<sp/>touche<sp/>enfoncée<sp/>est<sp/>effectué</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1ae5793c08382d92d18ab914a1bc73ed5c" kindref="member">mouvement_joueur</ref>(render,<ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a956e694c573d0932656656f19dab3419" kindref="member">dst_sol</ref><sp/>,event,window);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(5000);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(x=0;<sp/>x&lt;3;x++){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(y=0;<sp/>y&lt;20;y++){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a633d190c719e0c74b2a4fe82326006a6" kindref="member">collision</ref>(<ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a58477939c6476d62cb7070c3b00fa274" kindref="member">don</ref>[x][y].<ref refid="classdonne_1aff4562294a722fe10264717f89689321" kindref="member">x</ref>,<ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a58477939c6476d62cb7070c3b00fa274" kindref="member">don</ref>[x][y].<ref refid="classdonne_1af86a3903f07ea8dc5ee15bded3ef3584" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderClear(render);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a88ffb2f9284b3b71a6a4ab27f2177919" kindref="member">draw_map</ref>(render,<ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kindref="member">dst</ref>.x,<ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kindref="member">dst</ref>.y);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a" kindref="member">apres_camera</ref>={<ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kindref="member">dst</ref>.x-<ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a27417ec2d3e1ca3836668d935a89d060" kindref="member">src_monBackground</ref>.x,<ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kindref="member">dst</ref>.y-<ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a27417ec2d3e1ca3836668d935a89d060" kindref="member">src_monBackground</ref>.y,<ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kindref="member">dst</ref>.h,<ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kindref="member">dst</ref>.w};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(x=0;<sp/>x&lt;3;x++){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(y=0;<sp/>y&lt;20;y++){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a633d190c719e0c74b2a4fe82326006a6" kindref="member">collision</ref>(<ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a58477939c6476d62cb7070c3b00fa274" kindref="member">don</ref>[x][y].<ref refid="classdonne_1aff4562294a722fe10264717f89689321" kindref="member">x</ref>,<ref refid="classmap" kindref="compound">map</ref>.<ref refid="classmap_1a58477939c6476d62cb7070c3b00fa274" kindref="member">don</ref>[x][y].<ref refid="classdonne_1af86a3903f07ea8dc5ee15bded3ef3584" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(1000);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1acd282dc21f9f6556b55a5571983ba76c" kindref="member">gravite</ref>(render);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderCopy(render,<sp/><ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1aa4868029a5e6b45619c31471495d8252" kindref="member">monjoueur</ref>,<sp/>NULL,<sp/>&amp;<ref refid="classjoueur" kindref="compound">joueur</ref>.<ref refid="classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a" kindref="member">apres_camera</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_RenderPresent(render);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classfenetre_1a8df92c67e3835eed89cb6ed39d31b7fd" kindref="member">fenetre::cleanup_window</ref>(){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyRenderer(getRendere());</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>rendere<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_DestroyWindow(window);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>window<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/mafenetre.cpp"/>
+  </compounddef>
+</doxygen>

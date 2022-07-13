@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba">
+<title>src Directory Reference</title>
+<indexterm><primary>src Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_biblio_8h">biblio.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_joueur_8cpp">joueur.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_joueur_8h">joueur.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_mafenetre_8cpp">mafenetre.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_mafenetre_8h">mafenetre.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_main_8cpp">main.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_map_8cpp">map.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_map_8h">map.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

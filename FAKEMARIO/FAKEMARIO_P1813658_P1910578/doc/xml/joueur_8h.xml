@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="joueur_8h" kind="file" language="C++">
+    <compoundname>joueur.h</compoundname>
+    <includes refid="biblio_8h" local="yes">biblio.h</includes>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includedby refid="joueur_8cpp" local="yes">src/joueur.cpp</includedby>
+    <includedby refid="mafenetre_8cpp" local="yes">src/mafenetre.cpp</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>SDL2/SDL_mixer.h</label>
+      </node>
+      <node id="9">
+        <label>SDL2/SDL_image.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SDL2/SDL.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="13">
+        <label>unistd.h</label>
+      </node>
+      <node id="12">
+        <label>time.h</label>
+      </node>
+      <node id="7">
+        <label>math.h</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>biblio.h</label>
+        <link refid="biblio_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/joueur.h</label>
+        <link refid="joueur_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="10">
+        <label>SDL2/SDL_ttf.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/joueur.cpp</label>
+        <link refid="joueur_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/mafenetre.cpp</label>
+        <link refid="mafenetre_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/joueur.h</label>
+        <link refid="joueur_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classjoueur" prot="public">joueur</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>JOUEUR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="biblio_8h" kindref="compound">biblio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="map_8h" kindref="compound">map.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classjoueur" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classjoueur" kindref="compound">joueur</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="classjoueur_1a34247433eca3f6a52f22f09c5cee2916" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x_j,<sp/><ref refid="classjoueur_1a34247433eca3f6a52f22f09c5cee2916" kindref="member">y_j</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classjoueur_1a87a797648e5fe61495abe41b90b9a0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>g<sp/>=<sp/>9.81;</highlight></codeline>
+<codeline lineno="18" refid="classjoueur_1a6bda46004af167c54992bd2360a42b3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi<sp/>=<sp/>3.14;</highlight></codeline>
+<codeline lineno="19" refid="classjoueur_1af1ce955aaad1f93a8bfcb46667ca41f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v_init<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="20" refid="classjoueur_1a68588d29d842fdf1dadb57adb4856e70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle_init<sp/>=<sp/>pi/3;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classjoueur_1acf4a901316d6043c73d1977e092df4c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>MaxEcran<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classjoueur_1aa4868029a5e6b45619c31471495d8252" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Texture*<sp/><ref refid="classjoueur_1aa4868029a5e6b45619c31471495d8252" kindref="member">monjoueur</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classjoueur_1aece4c7bbf4270da1d90bc13389eeec6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Texture*<sp/><ref refid="classjoueur_1aece4c7bbf4270da1d90bc13389eeec6f" kindref="member">joueur2</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classjoueur_1a2a42f2d85fbd296182745101f5b02404" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Surface*<sp/><ref refid="classjoueur_1a2a42f2d85fbd296182745101f5b02404" kindref="member">ijoueur</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classjoueur_1a575882d1e6db7eb3e00f20da0339fd86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Surface*<sp/><ref refid="classjoueur_1a575882d1e6db7eb3e00f20da0339fd86" kindref="member">ijoueur2</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Rect<sp/><ref refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kindref="member">dst</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>SDL_Rect<sp/><ref refid="classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a" kindref="member">apres_camera</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classjoueur_1af30d459aa75097c0b6119e79d2921d2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>touche=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54" refid="classjoueur_1a2a9123371f87c044ea9c50e3808f4a27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arret=0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_joueur(SDL_Renderer*<sp/>render);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mouvement_joueur(SDL_Renderer*<sp/>render,SDL_Rect<sp/>sol,SDL_Event<sp/>event,SDL_Window*<sp/>window);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>draw_player(SDL_Renderer*<sp/>render);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>collision(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>b<sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gravite(SDL_Renderer*<sp/>render);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>!JOUEUR_H</highlight></codeline>
+    </programlisting>
+    <location file="src/joueur.h"/>
+  </compounddef>
+</doxygen>

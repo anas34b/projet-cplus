@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classfenetre" kind="class" language="C++" prot="public">
+    <compoundname>fenetre</compoundname>
+    <includes refid="mafenetre_8h" local="no">mafenetre.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfenetre_1a26507b6b85d12e4faa7854620e89cde2" prot="private" static="no" mutable="no">
+        <type>SDL_Window *</type>
+        <definition>SDL_Window* fenetre::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+<para>declaration de la fenetre </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/mafenetre.h" line="41" column="16" bodyfile="src/mafenetre.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfenetre_1ac80f37c32f7bd4160a13e55190c7119d" prot="private" static="no" mutable="no">
+        <type>SDL_Renderer *</type>
+        <definition>SDL_Renderer* fenetre::rendere</definition>
+        <argsstring></argsstring>
+        <name>rendere</name>
+        <briefdescription>
+<para>declaration du rendre </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/mafenetre.h" line="46" column="18" bodyfile="src/mafenetre.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfenetre_1a6ecdf7dbb458321415297273b8e24e4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fenetre::init_window</definition>
+        <argsstring>(const char *titre, int w, int h)</argsstring>
+        <name>init_window</name>
+        <param>
+          <type>const char *</type>
+          <declname>titre</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>initialisation de la fenetre et le render </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>titre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hight </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/mafenetre.h" line="16" column="10" bodyfile="src/mafenetre.cpp" bodystart="7" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classfenetre_1a386e988096055a2c489a14142a614e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SDL_Renderer *</type>
+        <definition>SDL_Renderer * fenetre::getRendere</definition>
+        <argsstring>()</argsstring>
+        <name>getRendere</name>
+        <briefdescription>
+<para>cette fonction de type rendre a pour objectif de recupere le rendere </para>
+        </briefdescription>
+        <detaileddescription>
+<para>brief description il est en prive on doit faire une fonction qui le retourne pour qu&apos;on puisse l&apos;utiliser</para>
+<para><simplesect kind="return"><para>SDL_Renderer* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/mafenetre.h" line="22" column="18" bodyfile="src/mafenetre.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classfenetre_1a6601e4c57e3f12564544aaaaee346dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fenetre::draw_window</definition>
+        <argsstring>(SDL_Renderer *render)</argsstring>
+        <name>draw_window</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>render</declname>
+        </param>
+        <briefdescription>
+<para>cette procedure a pour objectif d&apos;afficher la fenetre et dans la dernier il y a la boucle du jeux </para>
+        </briefdescription>
+        <detaileddescription>
+<para>l&apos;affichage de la fenetre et le rendere boucle de jeux</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>render</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/mafenetre.h" line="28" column="10" bodyfile="src/mafenetre.cpp" bodystart="47" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classfenetre_1a8df92c67e3835eed89cb6ed39d31b7fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fenetre::cleanup_window</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup_window</name>
+        <briefdescription>
+<para>cette procedure a pour objectif de detruire en memoir tout ce qu&apos;il a été declarer comme windows,render... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/mafenetre.h" line="33" column="10" bodyfile="src/mafenetre.cpp" bodystart="107" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/mafenetre.h" line="5" column="14" bodyfile="src/mafenetre.h" bodystart="5" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classfenetre_1a8df92c67e3835eed89cb6ed39d31b7fd" prot="public" virt="non-virtual"><scope>fenetre</scope><name>cleanup_window</name></member>
+      <member refid="classfenetre_1a6601e4c57e3f12564544aaaaee346dd8" prot="public" virt="non-virtual"><scope>fenetre</scope><name>draw_window</name></member>
+      <member refid="classfenetre_1a386e988096055a2c489a14142a614e23" prot="public" virt="non-virtual"><scope>fenetre</scope><name>getRendere</name></member>
+      <member refid="classfenetre_1a6ecdf7dbb458321415297273b8e24e4f" prot="public" virt="non-virtual"><scope>fenetre</scope><name>init_window</name></member>
+      <member refid="classfenetre_1ac80f37c32f7bd4160a13e55190c7119d" prot="private" virt="non-virtual"><scope>fenetre</scope><name>rendere</name></member>
+      <member refid="classfenetre_1a26507b6b85d12e4faa7854620e89cde2" prot="private" virt="non-virtual"><scope>fenetre</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,137 @@
+.TH "map" 3 "Tue May 17 2022" "Fake Mario" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+map
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <map\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_map\fP (SDL_Renderer *rendere)"
+.br
+.RI "initialisation des tableaus des images de la map "
+.ti -1c
+.RI "void \fBdraw_map\fP (SDL_Renderer *rendere, float xj, float yj)"
+.br
+.RI "cette procedure a pour bute d'afficher les texture de la map dans des cordonnes précise et les stocke dans le tableaux de cordonnees "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBdonne\fP \fBdon\fP [3][20]"
+.br
+.RI "creation un tableau de class pour stocker les cordonnees des textures de la map "
+.ti -1c
+.RI "float \fBter\fP [3][20]"
+.br
+.RI "tableau pour stocker les niveaux "
+.ti -1c
+.RI "SDL_Texture * \fBsol\fP"
+.br
+.RI "texture du sol "
+.ti -1c
+.RI "SDL_Rect \fBdst_sol\fP"
+.br
+.RI "regtangle du sol "
+.ti -1c
+.RI "SDL_Surface * \fBbackground\fP"
+.br
+.RI "surface du background "
+.ti -1c
+.RI "SDL_Texture * \fBmonBackground\fP"
+.br
+.RI "texture du background "
+.ti -1c
+.RI "SDL_Rect \fBsrc_monBackground\fP"
+.br
+.RI "rectangle de source du background "
+.ti -1c
+.RI "SDL_Rect \fBdst_monBackground\fP"
+.br
+.RI "rectangle destination du background "
+.ti -1c
+.RI "int \fBwidth\fP"
+.br
+.RI "pour stocker le h et w du background en temps réel "
+.ti -1c
+.RI "int \fBhight\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void map::draw_map (SDL_Renderer * rendere, float xj, float yj)"
+
+.PP
+cette procedure a pour bute d'afficher les texture de la map dans des cordonnes précise et les stocke dans le tableaux de cordonnees 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrendere\fP 
+.br
+\fIxj\fP 
+.br
+\fIyj\fP 
+.RE
+.PP
+
+.SS "void map::init_map (SDL_Renderer * rendere)"
+
+.PP
+initialisation des tableaus des images de la map 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrendere\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "SDL_Surface* map::background"
+
+.PP
+surface du background 
+.SS "\fBdonne\fP map::don[3][20]"
+
+.PP
+creation un tableau de class pour stocker les cordonnees des textures de la map 
+.SS "SDL_Rect map::dst_monBackground"
+
+.PP
+rectangle destination du background 
+.SS "SDL_Rect map::dst_sol"
+
+.PP
+regtangle du sol 
+.SS "int map::hight"
+
+.SS "SDL_Texture* map::monBackground"
+
+.PP
+texture du background 
+.SS "SDL_Texture* map::sol"
+
+.PP
+texture du sol 
+.SS "SDL_Rect map::src_monBackground"
+
+.PP
+rectangle de source du background 
+.SS "float map::ter[3][20]"
+
+.PP
+tableau pour stocker les niveaux 
+.SS "int map::width"
+
+.PP
+pour stocker le h et w du background en temps réel 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fake Mario from the source code\&.

@@ -1,0 +1,14 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,60,209"/>
+<area shape="rect" id="node2" href="$classfenetre.html#a8df92c67e3835eed89cb6ed39d31b7fd" title="cette procedure a pour objectif de detruire en memoir tout ce qu&#39;il a été declarer comme windows,..." alt="" coords="108,107,293,133"/>
+<area shape="rect" id="node3" href="$classfenetre.html#a6601e4c57e3f12564544aaaaee346dd8" title="cette procedure a pour objectif d&#39;afficher la fenetre et dans la dernier il y a la boucle du jeux" alt="" coords="117,157,284,184"/>
+<area shape="rect" id="node11" href="$classfenetre.html#a386e988096055a2c489a14142a614e23" title="cette fonction de type rendre a pour objectif de recupere le rendere" alt="" coords="125,208,277,235"/>
+<area shape="rect" id="node12" href="$classfenetre.html#a6ecdf7dbb458321415297273b8e24e4f" title="initialisation de la fenetre et le render" alt="" coords="123,259,278,285"/>
+<area shape="rect" id="node4" href="$classjoueur.html#a633d190c719e0c74b2a4fe82326006a6" title="cette procedure a pour objectif de detection de la collission" alt="" coords="378,5,503,32"/>
+<area shape="rect" id="node5" href="$classmap.html#a88ffb2f9284b3b71a6a4ab27f2177919" title="cette procedure a pour bute d&#39;afficher les texture de la map dans des cordonnes précise et les stocke..." alt="" coords="377,56,504,83"/>
+<area shape="rect" id="node6" href="$classjoueur.html#a4aa275fd8b35b320895744ba6cc7c547" title="cette procedure a pour objectif à faire l&#39;affichage initiale du joueur" alt="" coords="365,107,516,133"/>
+<area shape="rect" id="node7" href="$classjoueur.html#acd282dc21f9f6556b55a5571983ba76c" title="cette procedure a pour objectif d&#39;activer la gravite" alt="" coords="382,157,499,184"/>
+<area shape="rect" id="node8" href="$classjoueur.html#a31c4f4ef472b471ce2a9b40c76497d56" title="linitialisation des attribus du joueur:SDL_surface, SDL_texture," alt="" coords="371,208,511,235"/>
+<area shape="rect" id="node9" href="$classmap.html#a1cb87acfa6bd0ea8004fae886dbbe251" title="initialisation des tableaus des images de la map" alt="" coords="383,259,499,285"/>
+<area shape="rect" id="node10" href="$classjoueur.html#ada0abf528f9cabf17cc36244507cc337" title="cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur" alt="" coords="341,309,540,336"/>
+</map>

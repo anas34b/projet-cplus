@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classfenetre">
+<title>fenetre Class Reference</title>
+<indexterm><primary>fenetre</primary></indexterm>
+<para>
+<computeroutput>#include &lt;mafenetre.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classfenetre_1a6ecdf7dbb458321415297273b8e24e4f">init_window</link> (const char *titre, int w, int h)</para>
+
+<para>initialisation de la fenetre et le render </para>
+</listitem>
+            <listitem><para>SDL_Renderer * <link linkend="_classfenetre_1a386e988096055a2c489a14142a614e23">getRendere</link> ()</para>
+
+<para>cette fonction de type rendre a pour objectif de recupere le rendere </para>
+</listitem>
+            <listitem><para>void <link linkend="_classfenetre_1a6601e4c57e3f12564544aaaaee346dd8">draw_window</link> (SDL_Renderer *render)</para>
+
+<para>cette procedure a pour objectif d&apos;afficher la fenetre et dans la dernier il y a la boucle du jeux </para>
+</listitem>
+            <listitem><para>void <link linkend="_classfenetre_1a8df92c67e3835eed89cb6ed39d31b7fd">cleanup_window</link> ()</para>
+
+<para>cette procedure a pour objectif de detruire en memoir tout ce qu&apos;il a été declarer comme windows,render... </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classfenetre_1a8df92c67e3835eed89cb6ed39d31b7fd"/>    <section>
+    <title>cleanup_window()</title>
+<indexterm><primary>cleanup_window</primary><secondary>fenetre</secondary></indexterm>
+<indexterm><primary>fenetre</primary><secondary>cleanup_window</secondary></indexterm>
+<para><computeroutput>void fenetre::cleanup_window ( )</computeroutput></para><para>
+
+<para>cette procedure a pour objectif de detruire en memoir tout ce qu&apos;il a été declarer comme windows,render... </para>
+</para>
+    </section><anchor xml:id="_classfenetre_1a6601e4c57e3f12564544aaaaee346dd8"/>    <section>
+    <title>draw_window()</title>
+<indexterm><primary>draw_window</primary><secondary>fenetre</secondary></indexterm>
+<indexterm><primary>fenetre</primary><secondary>draw_window</secondary></indexterm>
+<para><computeroutput>void fenetre::draw_window (SDL_Renderer * render)</computeroutput></para><para>
+
+<para>cette procedure a pour objectif d&apos;afficher la fenetre et dans la dernier il y a la boucle du jeux </para>
+</para>
+
+<para>l&apos;affichage de la fenetre et le rendere boucle de jeux</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>render</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classfenetre_1a386e988096055a2c489a14142a614e23"/>    <section>
+    <title>getRendere()</title>
+<indexterm><primary>getRendere</primary><secondary>fenetre</secondary></indexterm>
+<indexterm><primary>fenetre</primary><secondary>getRendere</secondary></indexterm>
+<para><computeroutput>SDL_Renderer * fenetre::getRendere ( )</computeroutput></para><para>
+
+<para>cette fonction de type rendre a pour objectif de recupere le rendere </para>
+</para>
+
+<para>brief description il est en prive on doit faire une fonction qui le retourne pour qu&apos;on puisse l&apos;utiliser</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>SDL_Renderer* </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_classfenetre_1a6ecdf7dbb458321415297273b8e24e4f"/>    <section>
+    <title>init_window()</title>
+<indexterm><primary>init_window</primary><secondary>fenetre</secondary></indexterm>
+<indexterm><primary>fenetre</primary><secondary>init_window</secondary></indexterm>
+<para><computeroutput>void fenetre::init_window (const char * titre, int w, int h)</computeroutput></para><para>
+
+<para>initialisation de la fenetre et le render </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>titre</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>w</entry>
+                                <entry>
+<para>width </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>h</entry>
+                                <entry>
+<para>hight </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="_mafenetre_8h">mafenetre.h</link>src/<link linkend="_mafenetre_8cpp">mafenetre.cpp</link></section>
+</section>

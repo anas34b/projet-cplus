@@ -1,0 +1,265 @@
+\hypertarget{classjoueur}{}\doxysubsection{joueur Class Reference}
+\label{classjoueur}\index{joueur@{joueur}}
+
+
+{\ttfamily \#include $<$joueur.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classjoueur_a31c4f4ef472b471ce2a9b40c76497d56}{init\+\_\+joueur}} (S\+D\+L\+\_\+\+Renderer $\ast$render)
+\begin{DoxyCompactList}\small\item\em linitialisation des attribus du joueur\+:S\+D\+L\+\_\+surface, S\+D\+L\+\_\+texture, \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classjoueur_ae5793c08382d92d18ab914a1bc73ed5c}{mouvement\+\_\+joueur}} (S\+D\+L\+\_\+\+Renderer $\ast$render, S\+D\+L\+\_\+\+Rect sol, S\+D\+L\+\_\+\+Event event, S\+D\+L\+\_\+\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classjoueur_a4aa275fd8b35b320895744ba6cc7c547}{draw\+\_\+player}} (S\+D\+L\+\_\+\+Renderer $\ast$render)
+\begin{DoxyCompactList}\small\item\em cette procedure a pour objectif à faire l\textquotesingle{}affichage initiale du joueur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classjoueur_a633d190c719e0c74b2a4fe82326006a6}{collision}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em cette procedure a pour objectif de detection de la collission \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classjoueur_acd282dc21f9f6556b55a5571983ba76c}{gravite}} (S\+D\+L\+\_\+\+Renderer $\ast$render)
+\begin{DoxyCompactList}\small\item\em cette procedure a pour objectif d\textquotesingle{}activer la gravite \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classjoueur_a8993ce83ca36877be8b3006c2e953c9c}{x\+\_\+j}}
+\begin{DoxyCompactList}\small\item\em les positions initiale du joueur \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classjoueur_a34247433eca3f6a52f22f09c5cee2916}{y\+\_\+j}}
+\item 
+const double \mbox{\hyperlink{classjoueur_a87a797648e5fe61495abe41b90b9a0d4}{g}} = 9.\+81
+\begin{DoxyCompactList}\small\item\em les variable utilise pour faire le saut du joueur \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{classjoueur_a6bda46004af167c54992bd2360a42b3e}{pi}} = 3.\+14
+\item 
+int \mbox{\hyperlink{classjoueur_af1ce955aaad1f93a8bfcb46667ca41f5}{v\+\_\+init}} = 2
+\item 
+int \mbox{\hyperlink{classjoueur_a68588d29d842fdf1dadb57adb4856e70}{angle\+\_\+init}} = \mbox{\hyperlink{classjoueur_a6bda46004af167c54992bd2360a42b3e}{pi}}/3
+\item 
+bool \mbox{\hyperlink{classjoueur_acf4a901316d6043c73d1977e092df4c1}{Max\+Ecran}} = false
+\begin{DoxyCompactList}\small\item\em le boolean qui detecte le fullscreen \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classjoueur_aa4868029a5e6b45619c31471495d8252}{monjoueur}}
+\begin{DoxyCompactList}\small\item\em les textures et les Surface dont les images du joueur sont stockées \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classjoueur_aece4c7bbf4270da1d90bc13389eeec6f}{joueur2}}
+\item 
+S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classjoueur_a2a42f2d85fbd296182745101f5b02404}{ijoueur}}
+\item 
+S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classjoueur_a575882d1e6db7eb3e00f20da0339fd86}{ijoueur2}}
+\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classjoueur_a3e366a900791350aa8aff0b11f24a29a}{dst}}
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}affichage de l\textquotesingle{}image du joueur \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classjoueur_a3e355fec8ef8022ae0330cf6880ec59a}{apres\+\_\+camera}}
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}affichage du joueur aprés le fonctionement du camera(scrolling du background et de la map) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classjoueur_af30d459aa75097c0b6119e79d2921d2a}{touche}} =true
+\begin{DoxyCompactList}\small\item\em boolean pour activer ou desactiver la gravite \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classjoueur_a2a9123371f87c044ea9c50e3808f4a27}{arret}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classjoueur_a633d190c719e0c74b2a4fe82326006a6}\label{classjoueur_a633d190c719e0c74b2a4fe82326006a6}} 
+\index{joueur@{joueur}!collision@{collision}}
+\index{collision@{collision}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily void joueur\+::collision (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+cette procedure a pour objectif de detection de la collission 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjoueur_a4aa275fd8b35b320895744ba6cc7c547}\label{classjoueur_a4aa275fd8b35b320895744ba6cc7c547}} 
+\index{joueur@{joueur}!draw\_player@{draw\_player}}
+\index{draw\_player@{draw\_player}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{draw\_player()}{draw\_player()}}
+{\footnotesize\ttfamily void joueur\+::draw\+\_\+player (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render }\end{DoxyParamCaption})}
+
+
+
+cette procedure a pour objectif à faire l\textquotesingle{}affichage initiale du joueur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em render} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjoueur_acd282dc21f9f6556b55a5571983ba76c}\label{classjoueur_acd282dc21f9f6556b55a5571983ba76c}} 
+\index{joueur@{joueur}!gravite@{gravite}}
+\index{gravite@{gravite}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{gravite()}{gravite()}}
+{\footnotesize\ttfamily void joueur\+::gravite (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render }\end{DoxyParamCaption})}
+
+
+
+cette procedure a pour objectif d\textquotesingle{}activer la gravite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em render} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjoueur_a31c4f4ef472b471ce2a9b40c76497d56}\label{classjoueur_a31c4f4ef472b471ce2a9b40c76497d56}} 
+\index{joueur@{joueur}!init\_joueur@{init\_joueur}}
+\index{init\_joueur@{init\_joueur}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{init\_joueur()}{init\_joueur()}}
+{\footnotesize\ttfamily void joueur\+::init\+\_\+joueur (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render }\end{DoxyParamCaption})}
+
+
+
+linitialisation des attribus du joueur\+:S\+D\+L\+\_\+surface, S\+D\+L\+\_\+texture, 
+
+
+\begin{DoxyParams}{Parameters}
+{\em render} & pour l\textquotesingle{}affichage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classjoueur_ae5793c08382d92d18ab914a1bc73ed5c}\label{classjoueur_ae5793c08382d92d18ab914a1bc73ed5c}} 
+\index{joueur@{joueur}!mouvement\_joueur@{mouvement\_joueur}}
+\index{mouvement\_joueur@{mouvement\_joueur}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{mouvement\_joueur()}{mouvement\_joueur()}}
+{\footnotesize\ttfamily void joueur\+::mouvement\+\_\+joueur (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render,  }\item[{S\+D\+L\+\_\+\+Rect}]{sol,  }\item[{S\+D\+L\+\_\+\+Event}]{event,  }\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em render} & \\
+\hline
+{\em sol} & \\
+\hline
+{\em event} & \\
+\hline
+{\em src\+\_\+mon\+Background} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classjoueur_a68588d29d842fdf1dadb57adb4856e70}\label{classjoueur_a68588d29d842fdf1dadb57adb4856e70}} 
+\index{joueur@{joueur}!angle\_init@{angle\_init}}
+\index{angle\_init@{angle\_init}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{angle\_init}{angle\_init}}
+{\footnotesize\ttfamily int joueur\+::angle\+\_\+init = \mbox{\hyperlink{classjoueur_a6bda46004af167c54992bd2360a42b3e}{pi}}/3}
+
+\mbox{\Hypertarget{classjoueur_a3e355fec8ef8022ae0330cf6880ec59a}\label{classjoueur_a3e355fec8ef8022ae0330cf6880ec59a}} 
+\index{joueur@{joueur}!apres\_camera@{apres\_camera}}
+\index{apres\_camera@{apres\_camera}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{apres\_camera}{apres\_camera}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect joueur\+::apres\+\_\+camera}
+
+
+
+l\textquotesingle{}affichage du joueur aprés le fonctionement du camera(scrolling du background et de la map) 
+
+\mbox{\Hypertarget{classjoueur_a2a9123371f87c044ea9c50e3808f4a27}\label{classjoueur_a2a9123371f87c044ea9c50e3808f4a27}} 
+\index{joueur@{joueur}!arret@{arret}}
+\index{arret@{arret}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{arret}{arret}}
+{\footnotesize\ttfamily int joueur\+::arret =0}
+
+\mbox{\Hypertarget{classjoueur_a3e366a900791350aa8aff0b11f24a29a}\label{classjoueur_a3e366a900791350aa8aff0b11f24a29a}} 
+\index{joueur@{joueur}!dst@{dst}}
+\index{dst@{dst}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{dst}{dst}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect joueur\+::dst}
+
+
+
+l\textquotesingle{}affichage de l\textquotesingle{}image du joueur 
+
+\mbox{\Hypertarget{classjoueur_a87a797648e5fe61495abe41b90b9a0d4}\label{classjoueur_a87a797648e5fe61495abe41b90b9a0d4}} 
+\index{joueur@{joueur}!g@{g}}
+\index{g@{g}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily const double joueur\+::g = 9.\+81}
+
+
+
+les variable utilise pour faire le saut du joueur 
+
+\mbox{\Hypertarget{classjoueur_a2a42f2d85fbd296182745101f5b02404}\label{classjoueur_a2a42f2d85fbd296182745101f5b02404}} 
+\index{joueur@{joueur}!ijoueur@{ijoueur}}
+\index{ijoueur@{ijoueur}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{ijoueur}{ijoueur}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ joueur\+::ijoueur}
+
+\mbox{\Hypertarget{classjoueur_a575882d1e6db7eb3e00f20da0339fd86}\label{classjoueur_a575882d1e6db7eb3e00f20da0339fd86}} 
+\index{joueur@{joueur}!ijoueur2@{ijoueur2}}
+\index{ijoueur2@{ijoueur2}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{ijoueur2}{ijoueur2}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ joueur\+::ijoueur2}
+
+\mbox{\Hypertarget{classjoueur_aece4c7bbf4270da1d90bc13389eeec6f}\label{classjoueur_aece4c7bbf4270da1d90bc13389eeec6f}} 
+\index{joueur@{joueur}!joueur2@{joueur2}}
+\index{joueur2@{joueur2}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{joueur2}{joueur2}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ joueur\+::joueur2}
+
+\mbox{\Hypertarget{classjoueur_acf4a901316d6043c73d1977e092df4c1}\label{classjoueur_acf4a901316d6043c73d1977e092df4c1}} 
+\index{joueur@{joueur}!MaxEcran@{MaxEcran}}
+\index{MaxEcran@{MaxEcran}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{MaxEcran}{MaxEcran}}
+{\footnotesize\ttfamily bool joueur\+::\+Max\+Ecran = false}
+
+
+
+le boolean qui detecte le fullscreen 
+
+\mbox{\Hypertarget{classjoueur_aa4868029a5e6b45619c31471495d8252}\label{classjoueur_aa4868029a5e6b45619c31471495d8252}} 
+\index{joueur@{joueur}!monjoueur@{monjoueur}}
+\index{monjoueur@{monjoueur}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{monjoueur}{monjoueur}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ joueur\+::monjoueur}
+
+
+
+les textures et les Surface dont les images du joueur sont stockées 
+
+\mbox{\Hypertarget{classjoueur_a6bda46004af167c54992bd2360a42b3e}\label{classjoueur_a6bda46004af167c54992bd2360a42b3e}} 
+\index{joueur@{joueur}!pi@{pi}}
+\index{pi@{pi}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{pi}{pi}}
+{\footnotesize\ttfamily const double joueur\+::pi = 3.\+14}
+
+\mbox{\Hypertarget{classjoueur_af30d459aa75097c0b6119e79d2921d2a}\label{classjoueur_af30d459aa75097c0b6119e79d2921d2a}} 
+\index{joueur@{joueur}!touche@{touche}}
+\index{touche@{touche}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{touche}{touche}}
+{\footnotesize\ttfamily bool joueur\+::touche =true}
+
+
+
+boolean pour activer ou desactiver la gravite 
+
+\mbox{\Hypertarget{classjoueur_af1ce955aaad1f93a8bfcb46667ca41f5}\label{classjoueur_af1ce955aaad1f93a8bfcb46667ca41f5}} 
+\index{joueur@{joueur}!v\_init@{v\_init}}
+\index{v\_init@{v\_init}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{v\_init}{v\_init}}
+{\footnotesize\ttfamily int joueur\+::v\+\_\+init = 2}
+
+\mbox{\Hypertarget{classjoueur_a8993ce83ca36877be8b3006c2e953c9c}\label{classjoueur_a8993ce83ca36877be8b3006c2e953c9c}} 
+\index{joueur@{joueur}!x\_j@{x\_j}}
+\index{x\_j@{x\_j}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{x\_j}{x\_j}}
+{\footnotesize\ttfamily float joueur\+::x\+\_\+j}
+
+
+
+les positions initiale du joueur 
+
+\mbox{\Hypertarget{classjoueur_a34247433eca3f6a52f22f09c5cee2916}\label{classjoueur_a34247433eca3f6a52f22f09c5cee2916}} 
+\index{joueur@{joueur}!y\_j@{y\_j}}
+\index{y\_j@{y\_j}!joueur@{joueur}}
+\doxyparagraph{\texorpdfstring{y\_j}{y\_j}}
+{\footnotesize\ttfamily float joueur\+::y\+\_\+j}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{joueur_8h}{joueur.\+h}}\item 
+src/\mbox{\hyperlink{joueur_8cpp}{joueur.\+cpp}}\end{DoxyCompactItemize}

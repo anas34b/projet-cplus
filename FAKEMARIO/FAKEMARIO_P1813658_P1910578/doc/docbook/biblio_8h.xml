@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_biblio_8h">
+<title>src/biblio.h File Reference</title>
+<indexterm><primary>src/biblio.h</primary></indexterm>
+<programlisting>#include &lt;iostream&gt;
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+#include &lt;SDL2/SDL.h&gt;
+#include &lt;SDL2/SDL_image.h&gt;
+#include &lt;SDL2/SDL_ttf.h&gt;
+#include &lt;SDL2/SDL_mixer.h&gt;
+#include &lt;time.h&gt;
+#include &lt;unistd.h&gt;
+</programlisting>Include dependency graph for biblio.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="biblio_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="biblio_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_biblio_8h_1a9b90d193f8167af22b54c165be7eea33">BIBLIO_h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_biblio_8h_1a9b90d193f8167af22b54c165be7eea33"/>    <section>
+    <title>BIBLIO_h</title>
+<indexterm><primary>BIBLIO_h</primary><secondary>biblio.h</secondary></indexterm>
+<indexterm><primary>biblio.h</primary><secondary>BIBLIO_h</secondary></indexterm>
+<para><computeroutput>#define BIBLIO_h</computeroutput></para></section>
+</section>
+</section>

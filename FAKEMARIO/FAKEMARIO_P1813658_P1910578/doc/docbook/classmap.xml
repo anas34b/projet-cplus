@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmap">
+<title>map Class Reference</title>
+<indexterm><primary>map</primary></indexterm>
+<para>
+<computeroutput>#include &lt;map.h&gt;</computeroutput>
+</para>
+Collaboration diagram for map:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classmap__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classmap_1a1cb87acfa6bd0ea8004fae886dbbe251">init_map</link> (SDL_Renderer *rendere)</para>
+
+<para>initialisation des tableaus des images de la map </para>
+</listitem>
+            <listitem><para>void <link linkend="_classmap_1a88ffb2f9284b3b71a6a4ab27f2177919">draw_map</link> (SDL_Renderer *rendere, float xj, float yj)</para>
+
+<para>cette procedure a pour bute d&apos;afficher les texture de la map dans des cordonnes précise et les stocke dans le tableaux de cordonnees </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdonne">donne</link> <link linkend="_classmap_1a58477939c6476d62cb7070c3b00fa274">don</link> [3][20]</para>
+
+<para>creation un tableau de class pour stocker les cordonnees des textures de la map </para>
+</listitem>
+            <listitem><para>float <link linkend="_classmap_1a2de689e6b5ae21f2083596e295c84a6a">ter</link> [3][20]</para>
+
+<para>tableau pour stocker les niveaux </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classmap_1a3280ae3f7a0156e53dbb8c30f5e80044">sol</link></para>
+
+<para>texture du sol </para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classmap_1a956e694c573d0932656656f19dab3419">dst_sol</link></para>
+
+<para>regtangle du sol </para>
+</listitem>
+            <listitem><para>SDL_Surface * <link linkend="_classmap_1a9e4bbfd340e09a815da2f1df46409c91">background</link></para>
+
+<para>surface du background </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classmap_1a831b2ee1ba2fffef40897aea0e3ea593">monBackground</link></para>
+
+<para>texture du background </para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classmap_1a27417ec2d3e1ca3836668d935a89d060">src_monBackground</link></para>
+
+<para>rectangle de source du background </para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classmap_1a66439c93fa3c47079a67074a2ad7934b">dst_monBackground</link></para>
+
+<para>rectangle destination du background </para>
+</listitem>
+            <listitem><para>int <link linkend="_classmap_1a34b43c4ecce8de3a5228b7f4e6d66740">width</link></para>
+
+<para>pour stocker le h et w du background en temps réel </para>
+</listitem>
+            <listitem><para>int <link linkend="_classmap_1a2ab03d7b7b9bb7e0c0d99c670fa4d7d1">hight</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmap_1a88ffb2f9284b3b71a6a4ab27f2177919"/>    <section>
+    <title>draw_map()</title>
+<indexterm><primary>draw_map</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>draw_map</secondary></indexterm>
+<para><computeroutput>void map::draw_map (SDL_Renderer * rendere, float xj, float yj)</computeroutput></para><para>
+
+<para>cette procedure a pour bute d&apos;afficher les texture de la map dans des cordonnes précise et les stocke dans le tableaux de cordonnees </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rendere</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>xj</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>yj</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classmap_1a1cb87acfa6bd0ea8004fae886dbbe251"/>    <section>
+    <title>init_map()</title>
+<indexterm><primary>init_map</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>init_map</secondary></indexterm>
+<para><computeroutput>void map::init_map (SDL_Renderer * rendere)</computeroutput></para><para>
+
+<para>initialisation des tableaus des images de la map </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rendere</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmap_1a9e4bbfd340e09a815da2f1df46409c91"/>    <section>
+    <title>background</title>
+<indexterm><primary>background</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>background</secondary></indexterm>
+<para><computeroutput>SDL_Surface* map::background</computeroutput></para><para>
+
+<para>surface du background </para>
+</para>
+    </section><anchor xml:id="_classmap_1a58477939c6476d62cb7070c3b00fa274"/>    <section>
+    <title>don</title>
+<indexterm><primary>don</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>don</secondary></indexterm>
+<para><computeroutput><link linkend="_classdonne">donne</link> map::don[3][20]</computeroutput></para><para>
+
+<para>creation un tableau de class pour stocker les cordonnees des textures de la map </para>
+</para>
+    </section><anchor xml:id="_classmap_1a66439c93fa3c47079a67074a2ad7934b"/>    <section>
+    <title>dst_monBackground</title>
+<indexterm><primary>dst_monBackground</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>dst_monBackground</secondary></indexterm>
+<para><computeroutput>SDL_Rect map::dst_monBackground</computeroutput></para><para>
+
+<para>rectangle destination du background </para>
+</para>
+    </section><anchor xml:id="_classmap_1a956e694c573d0932656656f19dab3419"/>    <section>
+    <title>dst_sol</title>
+<indexterm><primary>dst_sol</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>dst_sol</secondary></indexterm>
+<para><computeroutput>SDL_Rect map::dst_sol</computeroutput></para><para>
+
+<para>regtangle du sol </para>
+</para>
+    </section><anchor xml:id="_classmap_1a2ab03d7b7b9bb7e0c0d99c670fa4d7d1"/>    <section>
+    <title>hight</title>
+<indexterm><primary>hight</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>hight</secondary></indexterm>
+<para><computeroutput>int map::hight</computeroutput></para>    </section><anchor xml:id="_classmap_1a831b2ee1ba2fffef40897aea0e3ea593"/>    <section>
+    <title>monBackground</title>
+<indexterm><primary>monBackground</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>monBackground</secondary></indexterm>
+<para><computeroutput>SDL_Texture* map::monBackground</computeroutput></para><para>
+
+<para>texture du background </para>
+</para>
+    </section><anchor xml:id="_classmap_1a3280ae3f7a0156e53dbb8c30f5e80044"/>    <section>
+    <title>sol</title>
+<indexterm><primary>sol</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>sol</secondary></indexterm>
+<para><computeroutput>SDL_Texture* map::sol</computeroutput></para><para>
+
+<para>texture du sol </para>
+</para>
+    </section><anchor xml:id="_classmap_1a27417ec2d3e1ca3836668d935a89d060"/>    <section>
+    <title>src_monBackground</title>
+<indexterm><primary>src_monBackground</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>src_monBackground</secondary></indexterm>
+<para><computeroutput>SDL_Rect map::src_monBackground</computeroutput></para><para>
+
+<para>rectangle de source du background </para>
+</para>
+    </section><anchor xml:id="_classmap_1a2de689e6b5ae21f2083596e295c84a6a"/>    <section>
+    <title>ter</title>
+<indexterm><primary>ter</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>ter</secondary></indexterm>
+<para><computeroutput>float map::ter[3][20]</computeroutput></para><para>
+
+<para>tableau pour stocker les niveaux </para>
+</para>
+    </section><anchor xml:id="_classmap_1a34b43c4ecce8de3a5228b7f4e6d66740"/>    <section>
+    <title>width</title>
+<indexterm><primary>width</primary><secondary>map</secondary></indexterm>
+<indexterm><primary>map</primary><secondary>width</secondary></indexterm>
+<para><computeroutput>int map::width</computeroutput></para><para>
+
+<para>pour stocker le h et w du background en temps réel </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="_map_8h">map.h</link>src/<link linkend="_map_8cpp">map.cpp</link></section>
+</section>

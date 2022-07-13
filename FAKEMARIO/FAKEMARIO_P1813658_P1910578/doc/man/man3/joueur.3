@@ -1,0 +1,182 @@
+.TH "joueur" 3 "Tue May 17 2022" "Fake Mario" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+joueur
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <joueur\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_joueur\fP (SDL_Renderer *render)"
+.br
+.RI "linitialisation des attribus du joueur:SDL_surface, SDL_texture, "
+.ti -1c
+.RI "void \fBmouvement_joueur\fP (SDL_Renderer *render, SDL_Rect sol, SDL_Event event, SDL_Rect src_monBackground)"
+.br
+.RI "cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur "
+.ti -1c
+.RI "void \fBdraw_player\fP (SDL_Renderer *render)"
+.br
+.RI "cette procedure a pour objectif à faire l'affichage initiale du joueur "
+.ti -1c
+.RI "void \fBcollision\fP (float a, float b)"
+.br
+.RI "cette procedure a pour objectif de detection de la collission "
+.ti -1c
+.RI "void \fBgravite\fP (SDL_Renderer *render)"
+.br
+.RI "cette procedure a pour objectif d'activer la gravite "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float \fBx_j\fP"
+.br
+.RI "les positions initiale du joueur "
+.ti -1c
+.RI "float \fBy_j\fP"
+.br
+.ti -1c
+.RI "const double \fBg\fP = 9\&.81"
+.br
+.RI "les variable utilise pour faire le saut du joueur "
+.ti -1c
+.RI "const double \fBpi\fP = 3\&.14"
+.br
+.ti -1c
+.RI "int \fBv_init\fP = 2"
+.br
+.ti -1c
+.RI "int \fBangle_init\fP = \fBpi\fP/3"
+.br
+.ti -1c
+.RI "SDL_Texture * \fBmonjoueur\fP"
+.br
+.RI "la texture dont l'image du joueur est stocké "
+.ti -1c
+.RI "SDL_Rect \fBdst\fP"
+.br
+.RI "l'affichage de l'image du joueur "
+.ti -1c
+.RI "SDL_Rect \fBapres_camera\fP"
+.br
+.RI "l'affichage du joueur aprés le fonctionement du camera(scrolling du background et de la map) "
+.ti -1c
+.RI "bool \fBtouche\fP =true"
+.br
+.RI "boolean pour activer ou desactiver la gravite "
+.ti -1c
+.RI "int \fBarret\fP =0"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void joueur::collision (float a, float b)"
+
+.PP
+cette procedure a pour objectif de detection de la collission 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa\fP 
+.br
+\fIb\fP 
+.RE
+.PP
+
+.SS "void joueur::draw_player (SDL_Renderer * render)"
+
+.PP
+cette procedure a pour objectif à faire l'affichage initiale du joueur 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrender\fP 
+.RE
+.PP
+
+.SS "void joueur::gravite (SDL_Renderer * render)"
+
+.PP
+cette procedure a pour objectif d'activer la gravite 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrender\fP 
+.RE
+.PP
+
+.SS "void joueur::init_joueur (SDL_Renderer * render)"
+
+.PP
+linitialisation des attribus du joueur:SDL_surface, SDL_texture, 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrender\fP pour l'affichage 
+.RE
+.PP
+
+.SS "void joueur::mouvement_joueur (SDL_Renderer * render, SDL_Rect sol, SDL_Event event, SDL_Rect src_monBackground)"
+
+.PP
+cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrender\fP 
+.br
+\fIsol\fP 
+.br
+\fIevent\fP 
+.br
+\fIsrc_monBackground\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int joueur::angle_init = \fBpi\fP/3"
+
+.SS "SDL_Rect joueur::apres_camera"
+
+.PP
+l'affichage du joueur aprés le fonctionement du camera(scrolling du background et de la map) 
+.SS "int joueur::arret =0"
+
+.SS "SDL_Rect joueur::dst"
+
+.PP
+l'affichage de l'image du joueur 
+.SS "const double joueur::g = 9\&.81"
+
+.PP
+les variable utilise pour faire le saut du joueur 
+.SS "SDL_Texture* joueur::monjoueur"
+
+.PP
+la texture dont l'image du joueur est stocké 
+.SS "const double joueur::pi = 3\&.14"
+
+.SS "bool joueur::touche =true"
+
+.PP
+boolean pour activer ou desactiver la gravite 
+.SS "int joueur::v_init = 2"
+
+.SS "float joueur::x_j"
+
+.PP
+les positions initiale du joueur 
+.SS "float joueur::y_j"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fake Mario from the source code\&.

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_map_8cpp">
+<title>src/map.cpp File Reference</title>
+<indexterm><primary>src/map.cpp</primary></indexterm>
+<programlisting>#include &quot;biblio.h&quot;
+#include &quot;map.h&quot;
+</programlisting>Include dependency graph for map.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="map_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_map_8cpp_1a8ca8418af2a0dbe729cfe12061c3616d">lev1</link> [3][20]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_map_8cpp_1a8ca8418af2a0dbe729cfe12061c3616d"/>    <section>
+    <title>lev1</title>
+<indexterm><primary>lev1</primary><secondary>map.cpp</secondary></indexterm>
+<indexterm><primary>map.cpp</primary><secondary>lev1</secondary></indexterm>
+<para><computeroutput>float lev1[3][20]</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>={
+&#32;&#32;&#32;&#32;{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+&#32;&#32;&#32;&#32;{0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0},
+&#32;&#32;&#32;&#32;{1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1}
+}
+</programlisting></section>
+</section>
+</section>

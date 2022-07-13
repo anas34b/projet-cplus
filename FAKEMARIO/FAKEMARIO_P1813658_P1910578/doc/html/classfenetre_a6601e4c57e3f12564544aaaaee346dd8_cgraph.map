@@ -1,0 +1,10 @@
+<map id="fenetre::draw_window" name="fenetre::draw_window">
+<area shape="rect" id="node1" title="cette procedure a pour objectif d&#39;afficher la fenetre et dans la dernier il y a la boucle du jeux" alt="" coords="5,157,172,184"/>
+<area shape="rect" id="node2" href="$classjoueur.html#a633d190c719e0c74b2a4fe82326006a6" title="cette procedure a pour objectif de detection de la collission" alt="" coords="257,5,382,32"/>
+<area shape="rect" id="node3" href="$classmap.html#a88ffb2f9284b3b71a6a4ab27f2177919" title="cette procedure a pour bute d&#39;afficher les texture de la map dans des cordonnes précise et les stocke..." alt="" coords="256,56,383,83"/>
+<area shape="rect" id="node4" href="$classjoueur.html#a4aa275fd8b35b320895744ba6cc7c547" title="cette procedure a pour objectif à faire l&#39;affichage initiale du joueur" alt="" coords="244,107,395,133"/>
+<area shape="rect" id="node5" href="$classjoueur.html#acd282dc21f9f6556b55a5571983ba76c" title="cette procedure a pour objectif d&#39;activer la gravite" alt="" coords="261,157,378,184"/>
+<area shape="rect" id="node6" href="$classjoueur.html#a31c4f4ef472b471ce2a9b40c76497d56" title="linitialisation des attribus du joueur:SDL_surface, SDL_texture," alt="" coords="249,208,389,235"/>
+<area shape="rect" id="node7" href="$classmap.html#a1cb87acfa6bd0ea8004fae886dbbe251" title="initialisation des tableaus des images de la map" alt="" coords="261,259,377,285"/>
+<area shape="rect" id="node8" href="$classjoueur.html#ada0abf528f9cabf17cc36244507cc337" title="cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur" alt="" coords="220,309,419,336"/>
+</map>

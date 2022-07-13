@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classjoueur">
+<title>joueur Class Reference</title>
+<indexterm><primary>joueur</primary></indexterm>
+<para>
+<computeroutput>#include &lt;joueur.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classjoueur_1a31c4f4ef472b471ce2a9b40c76497d56">init_joueur</link> (SDL_Renderer *render)</para>
+
+<para>linitialisation des attribus du joueur:SDL_surface, SDL_texture, </para>
+</listitem>
+            <listitem><para>void <link linkend="_classjoueur_1ae5793c08382d92d18ab914a1bc73ed5c">mouvement_joueur</link> (SDL_Renderer *render, SDL_Rect sol, SDL_Event event, SDL_Window *window)</para>
+
+<para>cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur </para>
+</listitem>
+            <listitem><para>void <link linkend="_classjoueur_1a4aa275fd8b35b320895744ba6cc7c547">draw_player</link> (SDL_Renderer *render)</para>
+
+<para>cette procedure a pour objectif à faire l&apos;affichage initiale du joueur </para>
+</listitem>
+            <listitem><para>void <link linkend="_classjoueur_1a633d190c719e0c74b2a4fe82326006a6">collision</link> (float a, float b)</para>
+
+<para>cette procedure a pour objectif de detection de la collission </para>
+</listitem>
+            <listitem><para>void <link linkend="_classjoueur_1acd282dc21f9f6556b55a5571983ba76c">gravite</link> (SDL_Renderer *render)</para>
+
+<para>cette procedure a pour objectif d&apos;activer la gravite </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_classjoueur_1a8993ce83ca36877be8b3006c2e953c9c">x_j</link></para>
+
+<para>les positions initiale du joueur </para>
+</listitem>
+            <listitem><para>float <link linkend="_classjoueur_1a34247433eca3f6a52f22f09c5cee2916">y_j</link></para>
+</listitem>
+            <listitem><para>const double <link linkend="_classjoueur_1a87a797648e5fe61495abe41b90b9a0d4">g</link> = 9.81</para>
+
+<para>les variable utilise pour faire le saut du joueur </para>
+</listitem>
+            <listitem><para>const double <link linkend="_classjoueur_1a6bda46004af167c54992bd2360a42b3e">pi</link> = 3.14</para>
+</listitem>
+            <listitem><para>int <link linkend="_classjoueur_1af1ce955aaad1f93a8bfcb46667ca41f5">v_init</link> = 2</para>
+</listitem>
+            <listitem><para>int <link linkend="_classjoueur_1a68588d29d842fdf1dadb57adb4856e70">angle_init</link> = <link linkend="_classjoueur_1a6bda46004af167c54992bd2360a42b3e">pi</link>/3</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classjoueur_1acf4a901316d6043c73d1977e092df4c1">MaxEcran</link> = false</para>
+
+<para>le boolean qui detecte le fullscreen </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classjoueur_1aa4868029a5e6b45619c31471495d8252">monjoueur</link></para>
+
+<para>les textures et les Surface dont les images du joueur sont stockées </para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_classjoueur_1aece4c7bbf4270da1d90bc13389eeec6f">joueur2</link></para>
+</listitem>
+            <listitem><para>SDL_Surface * <link linkend="_classjoueur_1a2a42f2d85fbd296182745101f5b02404">ijoueur</link></para>
+</listitem>
+            <listitem><para>SDL_Surface * <link linkend="_classjoueur_1a575882d1e6db7eb3e00f20da0339fd86">ijoueur2</link></para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classjoueur_1a3e366a900791350aa8aff0b11f24a29a">dst</link></para>
+
+<para>l&apos;affichage de l&apos;image du joueur </para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a">apres_camera</link></para>
+
+<para>l&apos;affichage du joueur aprés le fonctionement du camera(scrolling du background et de la map) </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classjoueur_1af30d459aa75097c0b6119e79d2921d2a">touche</link> =true</para>
+
+<para>boolean pour activer ou desactiver la gravite </para>
+</listitem>
+            <listitem><para>int <link linkend="_classjoueur_1a2a9123371f87c044ea9c50e3808f4a27">arret</link> =0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classjoueur_1a633d190c719e0c74b2a4fe82326006a6"/>    <section>
+    <title>collision()</title>
+<indexterm><primary>collision</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>collision</secondary></indexterm>
+<para><computeroutput>void joueur::collision (float a, float b)</computeroutput></para><para>
+
+<para>cette procedure a pour objectif de detection de la collission </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>a</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classjoueur_1a4aa275fd8b35b320895744ba6cc7c547"/>    <section>
+    <title>draw_player()</title>
+<indexterm><primary>draw_player</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>draw_player</secondary></indexterm>
+<para><computeroutput>void joueur::draw_player (SDL_Renderer * render)</computeroutput></para><para>
+
+<para>cette procedure a pour objectif à faire l&apos;affichage initiale du joueur </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>render</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classjoueur_1acd282dc21f9f6556b55a5571983ba76c"/>    <section>
+    <title>gravite()</title>
+<indexterm><primary>gravite</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>gravite</secondary></indexterm>
+<para><computeroutput>void joueur::gravite (SDL_Renderer * render)</computeroutput></para><para>
+
+<para>cette procedure a pour objectif d&apos;activer la gravite </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>render</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classjoueur_1a31c4f4ef472b471ce2a9b40c76497d56"/>    <section>
+    <title>init_joueur()</title>
+<indexterm><primary>init_joueur</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>init_joueur</secondary></indexterm>
+<para><computeroutput>void joueur::init_joueur (SDL_Renderer * render)</computeroutput></para><para>
+
+<para>linitialisation des attribus du joueur:SDL_surface, SDL_texture, </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>render</entry>
+                                <entry>
+<para>pour l&apos;affichage </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_classjoueur_1ae5793c08382d92d18ab914a1bc73ed5c"/>    <section>
+    <title>mouvement_joueur()</title>
+<indexterm><primary>mouvement_joueur</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>mouvement_joueur</secondary></indexterm>
+<para><computeroutput>void joueur::mouvement_joueur (SDL_Renderer * render, SDL_Rect sol, SDL_Event event, SDL_Window * window)</computeroutput></para><para>
+
+<para>cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>render</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>sol</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>event</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>src_monBackground</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classjoueur_1a68588d29d842fdf1dadb57adb4856e70"/>    <section>
+    <title>angle_init</title>
+<indexterm><primary>angle_init</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>angle_init</secondary></indexterm>
+<para><computeroutput>int joueur::angle_init = <link linkend="_classjoueur_1a6bda46004af167c54992bd2360a42b3e">pi</link>/3</computeroutput></para>    </section><anchor xml:id="_classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a"/>    <section>
+    <title>apres_camera</title>
+<indexterm><primary>apres_camera</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>apres_camera</secondary></indexterm>
+<para><computeroutput>SDL_Rect joueur::apres_camera</computeroutput></para><para>
+
+<para>l&apos;affichage du joueur aprés le fonctionement du camera(scrolling du background et de la map) </para>
+</para>
+    </section><anchor xml:id="_classjoueur_1a2a9123371f87c044ea9c50e3808f4a27"/>    <section>
+    <title>arret</title>
+<indexterm><primary>arret</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>arret</secondary></indexterm>
+<para><computeroutput>int joueur::arret =0</computeroutput></para>    </section><anchor xml:id="_classjoueur_1a3e366a900791350aa8aff0b11f24a29a"/>    <section>
+    <title>dst</title>
+<indexterm><primary>dst</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>dst</secondary></indexterm>
+<para><computeroutput>SDL_Rect joueur::dst</computeroutput></para><para>
+
+<para>l&apos;affichage de l&apos;image du joueur </para>
+</para>
+    </section><anchor xml:id="_classjoueur_1a87a797648e5fe61495abe41b90b9a0d4"/>    <section>
+    <title>g</title>
+<indexterm><primary>g</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>g</secondary></indexterm>
+<para><computeroutput>const double joueur::g = 9.81</computeroutput></para><para>
+
+<para>les variable utilise pour faire le saut du joueur </para>
+</para>
+    </section><anchor xml:id="_classjoueur_1a2a42f2d85fbd296182745101f5b02404"/>    <section>
+    <title>ijoueur</title>
+<indexterm><primary>ijoueur</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>ijoueur</secondary></indexterm>
+<para><computeroutput>SDL_Surface* joueur::ijoueur</computeroutput></para>    </section><anchor xml:id="_classjoueur_1a575882d1e6db7eb3e00f20da0339fd86"/>    <section>
+    <title>ijoueur2</title>
+<indexterm><primary>ijoueur2</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>ijoueur2</secondary></indexterm>
+<para><computeroutput>SDL_Surface* joueur::ijoueur2</computeroutput></para>    </section><anchor xml:id="_classjoueur_1aece4c7bbf4270da1d90bc13389eeec6f"/>    <section>
+    <title>joueur2</title>
+<indexterm><primary>joueur2</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>joueur2</secondary></indexterm>
+<para><computeroutput>SDL_Texture* joueur::joueur2</computeroutput></para>    </section><anchor xml:id="_classjoueur_1acf4a901316d6043c73d1977e092df4c1"/>    <section>
+    <title>MaxEcran</title>
+<indexterm><primary>MaxEcran</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>MaxEcran</secondary></indexterm>
+<para><computeroutput>bool joueur::MaxEcran = false</computeroutput></para><para>
+
+<para>le boolean qui detecte le fullscreen </para>
+</para>
+    </section><anchor xml:id="_classjoueur_1aa4868029a5e6b45619c31471495d8252"/>    <section>
+    <title>monjoueur</title>
+<indexterm><primary>monjoueur</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>monjoueur</secondary></indexterm>
+<para><computeroutput>SDL_Texture* joueur::monjoueur</computeroutput></para><para>
+
+<para>les textures et les Surface dont les images du joueur sont stockées </para>
+</para>
+    </section><anchor xml:id="_classjoueur_1a6bda46004af167c54992bd2360a42b3e"/>    <section>
+    <title>pi</title>
+<indexterm><primary>pi</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>pi</secondary></indexterm>
+<para><computeroutput>const double joueur::pi = 3.14</computeroutput></para>    </section><anchor xml:id="_classjoueur_1af30d459aa75097c0b6119e79d2921d2a"/>    <section>
+    <title>touche</title>
+<indexterm><primary>touche</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>touche</secondary></indexterm>
+<para><computeroutput>bool joueur::touche =true</computeroutput></para><para>
+
+<para>boolean pour activer ou desactiver la gravite </para>
+</para>
+    </section><anchor xml:id="_classjoueur_1af1ce955aaad1f93a8bfcb46667ca41f5"/>    <section>
+    <title>v_init</title>
+<indexterm><primary>v_init</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>v_init</secondary></indexterm>
+<para><computeroutput>int joueur::v_init = 2</computeroutput></para>    </section><anchor xml:id="_classjoueur_1a8993ce83ca36877be8b3006c2e953c9c"/>    <section>
+    <title>x_j</title>
+<indexterm><primary>x_j</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>x_j</secondary></indexterm>
+<para><computeroutput>float joueur::x_j</computeroutput></para><para>
+
+<para>les positions initiale du joueur </para>
+</para>
+    </section><anchor xml:id="_classjoueur_1a34247433eca3f6a52f22f09c5cee2916"/>    <section>
+    <title>y_j</title>
+<indexterm><primary>y_j</primary><secondary>joueur</secondary></indexterm>
+<indexterm><primary>joueur</primary><secondary>y_j</secondary></indexterm>
+<para><computeroutput>float joueur::y_j</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="_joueur_8h">joueur.h</link>src/<link linkend="_joueur_8cpp">joueur.cpp</link></section>
+</section>

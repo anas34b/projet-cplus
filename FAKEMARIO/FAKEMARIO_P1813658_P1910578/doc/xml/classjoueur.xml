@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classjoueur" kind="class" language="C++" prot="public">
+    <compoundname>joueur</compoundname>
+    <includes refid="joueur_8h" local="no">joueur.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classjoueur_1a8993ce83ca36877be8b3006c2e953c9c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float joueur::x_j</definition>
+        <argsstring></argsstring>
+        <name>x_j</name>
+        <briefdescription>
+<para>les positions initiale du joueur </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="11" column="11" bodyfile="src/joueur.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a34247433eca3f6a52f22f09c5cee2916" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float joueur::y_j</definition>
+        <argsstring></argsstring>
+        <name>y_j</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="11" column="15" bodyfile="src/joueur.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a87a797648e5fe61495abe41b90b9a0d4" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double joueur::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <initializer>= 9.81</initializer>
+        <briefdescription>
+<para>les variable utilise pour faire le saut du joueur </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="17" column="18" bodyfile="src/joueur.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a6bda46004af167c54992bd2360a42b3e" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double joueur::pi</definition>
+        <argsstring></argsstring>
+        <name>pi</name>
+        <initializer>= 3.14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="18" column="18" bodyfile="src/joueur.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1af1ce955aaad1f93a8bfcb46667ca41f5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int joueur::v_init</definition>
+        <argsstring></argsstring>
+        <name>v_init</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="19" column="9" bodyfile="src/joueur.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a68588d29d842fdf1dadb57adb4856e70" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int joueur::angle_init</definition>
+        <argsstring></argsstring>
+        <name>angle_init</name>
+        <initializer>= <ref refid="classjoueur_1a6bda46004af167c54992bd2360a42b3e" kindref="member">pi</ref>/3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="20" column="9" bodyfile="src/joueur.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1acf4a901316d6043c73d1977e092df4c1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool joueur::MaxEcran</definition>
+        <argsstring></argsstring>
+        <name>MaxEcran</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>le boolean qui detecte le fullscreen </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="26" column="10" bodyfile="src/joueur.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1aa4868029a5e6b45619c31471495d8252" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* joueur::monjoueur</definition>
+        <argsstring></argsstring>
+        <name>monjoueur</name>
+        <briefdescription>
+<para>les textures et les Surface dont les images du joueur sont stockées </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="32" column="17" bodyfile="src/joueur.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1aece4c7bbf4270da1d90bc13389eeec6f" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* joueur::joueur2</definition>
+        <argsstring></argsstring>
+        <name>joueur2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="33" column="17" bodyfile="src/joueur.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a2a42f2d85fbd296182745101f5b02404" prot="public" static="no" mutable="no">
+        <type>SDL_Surface *</type>
+        <definition>SDL_Surface* joueur::ijoueur</definition>
+        <argsstring></argsstring>
+        <name>ijoueur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="34" column="17" bodyfile="src/joueur.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a575882d1e6db7eb3e00f20da0339fd86" prot="public" static="no" mutable="no">
+        <type>SDL_Surface *</type>
+        <definition>SDL_Surface* joueur::ijoueur2</definition>
+        <argsstring></argsstring>
+        <name>ijoueur2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="35" column="17" bodyfile="src/joueur.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect joueur::dst</definition>
+        <argsstring></argsstring>
+        <name>dst</name>
+        <briefdescription>
+<para>l&apos;affichage de l&apos;image du joueur </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="41" column="14" bodyfile="src/joueur.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect joueur::apres_camera</definition>
+        <argsstring></argsstring>
+        <name>apres_camera</name>
+        <briefdescription>
+<para>l&apos;affichage du joueur aprés le fonctionement du camera(scrolling du background et de la map) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="47" column="14" bodyfile="src/joueur.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1af30d459aa75097c0b6119e79d2921d2a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool joueur::touche</definition>
+        <argsstring></argsstring>
+        <name>touche</name>
+        <initializer>=true</initializer>
+        <briefdescription>
+<para>boolean pour activer ou desactiver la gravite </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="53" column="10" bodyfile="src/joueur.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjoueur_1a2a9123371f87c044ea9c50e3808f4a27" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int joueur::arret</definition>
+        <argsstring></argsstring>
+        <name>arret</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="54" column="9" bodyfile="src/joueur.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classjoueur_1a31c4f4ef472b471ce2a9b40c76497d56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joueur::init_joueur</definition>
+        <argsstring>(SDL_Renderer *render)</argsstring>
+        <name>init_joueur</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>render</declname>
+        </param>
+        <briefdescription>
+<para>linitialisation des attribus du joueur:SDL_surface, SDL_texture, </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>render</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pour l&apos;affichage </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="61" column="10" bodyfile="src/joueur.cpp" bodystart="5" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classjoueur_1ae5793c08382d92d18ab914a1bc73ed5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joueur::mouvement_joueur</definition>
+        <argsstring>(SDL_Renderer *render, SDL_Rect sol, SDL_Event event, SDL_Window *window)</argsstring>
+        <name>mouvement_joueur</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>render</declname>
+        </param>
+        <param>
+          <type>SDL_Rect</type>
+          <declname>sol</declname>
+        </param>
+        <param>
+          <type>SDL_Event</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>SDL_Window *</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+<para>cette procedure a pour objectif de bouger le joueur en detectant les touches utiliser par le joueur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>render</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src_monBackground</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="71" column="10" bodyfile="src/joueur.cpp" bodystart="36" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classjoueur_1a4aa275fd8b35b320895744ba6cc7c547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joueur::draw_player</definition>
+        <argsstring>(SDL_Renderer *render)</argsstring>
+        <name>draw_player</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>render</declname>
+        </param>
+        <briefdescription>
+<para>cette procedure a pour objectif à faire l&apos;affichage initiale du joueur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>render</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="78" column="10" bodyfile="src/joueur.cpp" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classjoueur_1a633d190c719e0c74b2a4fe82326006a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joueur::collision</definition>
+        <argsstring>(float a, float b)</argsstring>
+        <name>collision</name>
+        <param>
+          <type>float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>cette procedure a pour objectif de detection de la collission </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="86" column="10" bodyfile="src/joueur.cpp" bodystart="80" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classjoueur_1acd282dc21f9f6556b55a5571983ba76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joueur::gravite</definition>
+        <argsstring>(SDL_Renderer *render)</argsstring>
+        <name>gravite</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>render</declname>
+        </param>
+        <briefdescription>
+<para>cette procedure a pour objectif d&apos;activer la gravite </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>render</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/joueur.h" line="93" column="10" bodyfile="src/joueur.cpp" bodystart="100" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/joueur.h" line="6" column="13" bodyfile="src/joueur.h" bodystart="6" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classjoueur_1a68588d29d842fdf1dadb57adb4856e70" prot="public" virt="non-virtual"><scope>joueur</scope><name>angle_init</name></member>
+      <member refid="classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a" prot="public" virt="non-virtual"><scope>joueur</scope><name>apres_camera</name></member>
+      <member refid="classjoueur_1a2a9123371f87c044ea9c50e3808f4a27" prot="public" virt="non-virtual"><scope>joueur</scope><name>arret</name></member>
+      <member refid="classjoueur_1a633d190c719e0c74b2a4fe82326006a6" prot="public" virt="non-virtual"><scope>joueur</scope><name>collision</name></member>
+      <member refid="classjoueur_1a4aa275fd8b35b320895744ba6cc7c547" prot="public" virt="non-virtual"><scope>joueur</scope><name>draw_player</name></member>
+      <member refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" prot="public" virt="non-virtual"><scope>joueur</scope><name>dst</name></member>
+      <member refid="classjoueur_1a87a797648e5fe61495abe41b90b9a0d4" prot="public" virt="non-virtual"><scope>joueur</scope><name>g</name></member>
+      <member refid="classjoueur_1acd282dc21f9f6556b55a5571983ba76c" prot="public" virt="non-virtual"><scope>joueur</scope><name>gravite</name></member>
+      <member refid="classjoueur_1a2a42f2d85fbd296182745101f5b02404" prot="public" virt="non-virtual"><scope>joueur</scope><name>ijoueur</name></member>
+      <member refid="classjoueur_1a575882d1e6db7eb3e00f20da0339fd86" prot="public" virt="non-virtual"><scope>joueur</scope><name>ijoueur2</name></member>
+      <member refid="classjoueur_1a31c4f4ef472b471ce2a9b40c76497d56" prot="public" virt="non-virtual"><scope>joueur</scope><name>init_joueur</name></member>
+      <member refid="classjoueur_1aece4c7bbf4270da1d90bc13389eeec6f" prot="public" virt="non-virtual"><scope>joueur</scope><name>joueur2</name></member>
+      <member refid="classjoueur_1acf4a901316d6043c73d1977e092df4c1" prot="public" virt="non-virtual"><scope>joueur</scope><name>MaxEcran</name></member>
+      <member refid="classjoueur_1aa4868029a5e6b45619c31471495d8252" prot="public" virt="non-virtual"><scope>joueur</scope><name>monjoueur</name></member>
+      <member refid="classjoueur_1ae5793c08382d92d18ab914a1bc73ed5c" prot="public" virt="non-virtual"><scope>joueur</scope><name>mouvement_joueur</name></member>
+      <member refid="classjoueur_1a6bda46004af167c54992bd2360a42b3e" prot="public" virt="non-virtual"><scope>joueur</scope><name>pi</name></member>
+      <member refid="classjoueur_1af30d459aa75097c0b6119e79d2921d2a" prot="public" virt="non-virtual"><scope>joueur</scope><name>touche</name></member>
+      <member refid="classjoueur_1af1ce955aaad1f93a8bfcb46667ca41f5" prot="public" virt="non-virtual"><scope>joueur</scope><name>v_init</name></member>
+      <member refid="classjoueur_1a8993ce83ca36877be8b3006c2e953c9c" prot="public" virt="non-virtual"><scope>joueur</scope><name>x_j</name></member>
+      <member refid="classjoueur_1a34247433eca3f6a52f22f09c5cee2916" prot="public" virt="non-virtual"><scope>joueur</scope><name>y_j</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

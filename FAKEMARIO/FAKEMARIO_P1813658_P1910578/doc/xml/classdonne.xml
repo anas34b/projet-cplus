@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdonne" kind="class" language="C++" prot="public">
+    <compoundname>donne</compoundname>
+    <includes refid="map_8h" local="no">map.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdonne_1aff4562294a722fe10264717f89689321" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float donne::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="10" column="11" bodyfile="src/map.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdonne_1af86a3903f07ea8dc5ee15bded3ef3584" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float donne::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="10" column="12" bodyfile="src/map.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>class pour stocker les cordonnees des textures de la map </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/map.h" line="8" column="12" bodyfile="src/map.h" bodystart="8" bodyend="11"/>
+    <listofallmembers>
+      <member refid="classdonne_1aff4562294a722fe10264717f89689321" prot="public" virt="non-virtual"><scope>donne</scope><name>x</name></member>
+      <member refid="classdonne_1af86a3903f07ea8dc5ee15bded3ef3584" prot="public" virt="non-virtual"><scope>donne</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classmap" kind="class" language="C++" prot="public">
+    <compoundname>map</compoundname>
+    <includes refid="map_8h" local="no">map.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmap_1a58477939c6476d62cb7070c3b00fa274" prot="public" static="no" mutable="no">
+        <type><ref refid="classdonne" kindref="compound">donne</ref></type>
+        <definition>donne map::don[3][20]</definition>
+        <argsstring>[3][20]</argsstring>
+        <name>don</name>
+        <briefdescription>
+<para>creation un tableau de class pour stocker les cordonnees des textures de la map </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="19" column="11" bodyfile="src/map.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a2de689e6b5ae21f2083596e295c84a6a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float map::ter[3][20]</definition>
+        <argsstring>[3][20]</argsstring>
+        <name>ter</name>
+        <briefdescription>
+<para>tableau pour stocker les niveaux </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="25" column="11" bodyfile="src/map.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a3280ae3f7a0156e53dbb8c30f5e80044" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* map::sol</definition>
+        <argsstring></argsstring>
+        <name>sol</name>
+        <briefdescription>
+<para>texture du sol </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="31" column="17" bodyfile="src/map.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a956e694c573d0932656656f19dab3419" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect map::dst_sol</definition>
+        <argsstring></argsstring>
+        <name>dst_sol</name>
+        <briefdescription>
+<para>regtangle du sol </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="37" column="14" bodyfile="src/map.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a9e4bbfd340e09a815da2f1df46409c91" prot="public" static="no" mutable="no">
+        <type>SDL_Surface *</type>
+        <definition>SDL_Surface* map::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+<para>surface du background </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="50" column="17" bodyfile="src/map.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a831b2ee1ba2fffef40897aea0e3ea593" prot="public" static="no" mutable="no">
+        <type>SDL_Texture *</type>
+        <definition>SDL_Texture* map::monBackground</definition>
+        <argsstring></argsstring>
+        <name>monBackground</name>
+        <briefdescription>
+<para>texture du background </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="56" column="17" bodyfile="src/map.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a27417ec2d3e1ca3836668d935a89d060" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect map::src_monBackground</definition>
+        <argsstring></argsstring>
+        <name>src_monBackground</name>
+        <briefdescription>
+<para>rectangle de source du background </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="62" column="14" bodyfile="src/map.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a66439c93fa3c47079a67074a2ad7934b" prot="public" static="no" mutable="no">
+        <type>SDL_Rect</type>
+        <definition>SDL_Rect map::dst_monBackground</definition>
+        <argsstring></argsstring>
+        <name>dst_monBackground</name>
+        <briefdescription>
+<para>rectangle destination du background </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="68" column="14" bodyfile="src/map.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a34b43c4ecce8de3a5228b7f4e6d66740" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int map::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>pour stocker le h et w du background en temps réel </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="74" column="9" bodyfile="src/map.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmap_1a2ab03d7b7b9bb7e0c0d99c670fa4d7d1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int map::hight</definition>
+        <argsstring></argsstring>
+        <name>hight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="74" column="14" bodyfile="src/map.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmap_1a1cb87acfa6bd0ea8004fae886dbbe251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void map::init_map</definition>
+        <argsstring>(SDL_Renderer *rendere)</argsstring>
+        <name>init_map</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>rendere</declname>
+        </param>
+        <briefdescription>
+<para>initialisation des tableaus des images de la map </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rendere</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="44" column="10" bodyfile="src/map.cpp" bodystart="11" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classmap_1a88ffb2f9284b3b71a6a4ab27f2177919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void map::draw_map</definition>
+        <argsstring>(SDL_Renderer *rendere, float xj, float yj)</argsstring>
+        <name>draw_map</name>
+        <param>
+          <type>SDL_Renderer *</type>
+          <declname>rendere</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>xj</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>yj</declname>
+        </param>
+        <briefdescription>
+<para>cette procedure a pour bute d&apos;afficher les texture de la map dans des cordonnes précise et les stocke dans le tableaux de cordonnees </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rendere</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/map.h" line="84" column="10" bodyfile="src/map.cpp" bodystart="61" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>map</label>
+        <link refid="classmap"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>don</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>donne</label>
+        <link refid="classdonne"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/map.h" line="13" column="10" bodyfile="src/map.h" bodystart="13" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classmap_1a9e4bbfd340e09a815da2f1df46409c91" prot="public" virt="non-virtual"><scope>map</scope><name>background</name></member>
+      <member refid="classmap_1a58477939c6476d62cb7070c3b00fa274" prot="public" virt="non-virtual"><scope>map</scope><name>don</name></member>
+      <member refid="classmap_1a88ffb2f9284b3b71a6a4ab27f2177919" prot="public" virt="non-virtual"><scope>map</scope><name>draw_map</name></member>
+      <member refid="classmap_1a66439c93fa3c47079a67074a2ad7934b" prot="public" virt="non-virtual"><scope>map</scope><name>dst_monBackground</name></member>
+      <member refid="classmap_1a956e694c573d0932656656f19dab3419" prot="public" virt="non-virtual"><scope>map</scope><name>dst_sol</name></member>
+      <member refid="classmap_1a2ab03d7b7b9bb7e0c0d99c670fa4d7d1" prot="public" virt="non-virtual"><scope>map</scope><name>hight</name></member>
+      <member refid="classmap_1a1cb87acfa6bd0ea8004fae886dbbe251" prot="public" virt="non-virtual"><scope>map</scope><name>init_map</name></member>
+      <member refid="classmap_1a831b2ee1ba2fffef40897aea0e3ea593" prot="public" virt="non-virtual"><scope>map</scope><name>monBackground</name></member>
+      <member refid="classmap_1a3280ae3f7a0156e53dbb8c30f5e80044" prot="public" virt="non-virtual"><scope>map</scope><name>sol</name></member>
+      <member refid="classmap_1a27417ec2d3e1ca3836668d935a89d060" prot="public" virt="non-virtual"><scope>map</scope><name>src_monBackground</name></member>
+      <member refid="classmap_1a2de689e6b5ae21f2083596e295c84a6a" prot="public" virt="non-virtual"><scope>map</scope><name>ter</name></member>
+      <member refid="classmap_1a34b43c4ecce8de3a5228b7f4e6d66740" prot="public" virt="non-virtual"><scope>map</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

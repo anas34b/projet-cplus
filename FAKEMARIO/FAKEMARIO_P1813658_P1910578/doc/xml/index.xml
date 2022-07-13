@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classdonne" kind="class"><name>donne</name>
+    <member refid="classdonne_1aff4562294a722fe10264717f89689321" kind="variable"><name>x</name></member>
+    <member refid="classdonne_1af86a3903f07ea8dc5ee15bded3ef3584" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="classfenetre" kind="class"><name>fenetre</name>
+    <member refid="classfenetre_1a26507b6b85d12e4faa7854620e89cde2" kind="variable"><name>window</name></member>
+    <member refid="classfenetre_1ac80f37c32f7bd4160a13e55190c7119d" kind="variable"><name>rendere</name></member>
+    <member refid="classfenetre_1a6ecdf7dbb458321415297273b8e24e4f" kind="function"><name>init_window</name></member>
+    <member refid="classfenetre_1a386e988096055a2c489a14142a614e23" kind="function"><name>getRendere</name></member>
+    <member refid="classfenetre_1a6601e4c57e3f12564544aaaaee346dd8" kind="function"><name>draw_window</name></member>
+    <member refid="classfenetre_1a8df92c67e3835eed89cb6ed39d31b7fd" kind="function"><name>cleanup_window</name></member>
+  </compound>
+  <compound refid="classjoueur" kind="class"><name>joueur</name>
+    <member refid="classjoueur_1a8993ce83ca36877be8b3006c2e953c9c" kind="variable"><name>x_j</name></member>
+    <member refid="classjoueur_1a34247433eca3f6a52f22f09c5cee2916" kind="variable"><name>y_j</name></member>
+    <member refid="classjoueur_1a87a797648e5fe61495abe41b90b9a0d4" kind="variable"><name>g</name></member>
+    <member refid="classjoueur_1a6bda46004af167c54992bd2360a42b3e" kind="variable"><name>pi</name></member>
+    <member refid="classjoueur_1af1ce955aaad1f93a8bfcb46667ca41f5" kind="variable"><name>v_init</name></member>
+    <member refid="classjoueur_1a68588d29d842fdf1dadb57adb4856e70" kind="variable"><name>angle_init</name></member>
+    <member refid="classjoueur_1acf4a901316d6043c73d1977e092df4c1" kind="variable"><name>MaxEcran</name></member>
+    <member refid="classjoueur_1aa4868029a5e6b45619c31471495d8252" kind="variable"><name>monjoueur</name></member>
+    <member refid="classjoueur_1aece4c7bbf4270da1d90bc13389eeec6f" kind="variable"><name>joueur2</name></member>
+    <member refid="classjoueur_1a2a42f2d85fbd296182745101f5b02404" kind="variable"><name>ijoueur</name></member>
+    <member refid="classjoueur_1a575882d1e6db7eb3e00f20da0339fd86" kind="variable"><name>ijoueur2</name></member>
+    <member refid="classjoueur_1a3e366a900791350aa8aff0b11f24a29a" kind="variable"><name>dst</name></member>
+    <member refid="classjoueur_1a3e355fec8ef8022ae0330cf6880ec59a" kind="variable"><name>apres_camera</name></member>
+    <member refid="classjoueur_1af30d459aa75097c0b6119e79d2921d2a" kind="variable"><name>touche</name></member>
+    <member refid="classjoueur_1a2a9123371f87c044ea9c50e3808f4a27" kind="variable"><name>arret</name></member>
+    <member refid="classjoueur_1a31c4f4ef472b471ce2a9b40c76497d56" kind="function"><name>init_joueur</name></member>
+    <member refid="classjoueur_1ae5793c08382d92d18ab914a1bc73ed5c" kind="function"><name>mouvement_joueur</name></member>
+    <member refid="classjoueur_1a4aa275fd8b35b320895744ba6cc7c547" kind="function"><name>draw_player</name></member>
+    <member refid="classjoueur_1a633d190c719e0c74b2a4fe82326006a6" kind="function"><name>collision</name></member>
+    <member refid="classjoueur_1acd282dc21f9f6556b55a5571983ba76c" kind="function"><name>gravite</name></member>
+  </compound>
+  <compound refid="classmap" kind="class"><name>map</name>
+    <member refid="classmap_1a58477939c6476d62cb7070c3b00fa274" kind="variable"><name>don</name></member>
+    <member refid="classmap_1a2de689e6b5ae21f2083596e295c84a6a" kind="variable"><name>ter</name></member>
+    <member refid="classmap_1a3280ae3f7a0156e53dbb8c30f5e80044" kind="variable"><name>sol</name></member>
+    <member refid="classmap_1a956e694c573d0932656656f19dab3419" kind="variable"><name>dst_sol</name></member>
+    <member refid="classmap_1a9e4bbfd340e09a815da2f1df46409c91" kind="variable"><name>background</name></member>
+    <member refid="classmap_1a831b2ee1ba2fffef40897aea0e3ea593" kind="variable"><name>monBackground</name></member>
+    <member refid="classmap_1a27417ec2d3e1ca3836668d935a89d060" kind="variable"><name>src_monBackground</name></member>
+    <member refid="classmap_1a66439c93fa3c47079a67074a2ad7934b" kind="variable"><name>dst_monBackground</name></member>
+    <member refid="classmap_1a34b43c4ecce8de3a5228b7f4e6d66740" kind="variable"><name>width</name></member>
+    <member refid="classmap_1a2ab03d7b7b9bb7e0c0d99c670fa4d7d1" kind="variable"><name>hight</name></member>
+    <member refid="classmap_1a1cb87acfa6bd0ea8004fae886dbbe251" kind="function"><name>init_map</name></member>
+    <member refid="classmap_1a88ffb2f9284b3b71a6a4ab27f2177919" kind="function"><name>draw_map</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="biblio_8h" kind="file"><name>biblio.h</name>
+    <member refid="biblio_8h_1a9b90d193f8167af22b54c165be7eea33" kind="define"><name>BIBLIO_h</name></member>
+  </compound>
+  <compound refid="joueur_8cpp" kind="file"><name>joueur.cpp</name>
+  </compound>
+  <compound refid="joueur_8h" kind="file"><name>joueur.h</name>
+  </compound>
+  <compound refid="mafenetre_8cpp" kind="file"><name>mafenetre.cpp</name>
+  </compound>
+  <compound refid="mafenetre_8h" kind="file"><name>mafenetre.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="map_8cpp" kind="file"><name>map.cpp</name>
+    <member refid="map_8cpp_1a8ca8418af2a0dbe729cfe12061c3616d" kind="variable"><name>lev1</name></member>
+  </compound>
+  <compound refid="map_8h" kind="file"><name>map.h</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

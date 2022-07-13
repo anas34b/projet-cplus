@@ -1,0 +1,87 @@
+\hypertarget{classfenetre}{}\doxysubsection{fenetre Class Reference}
+\label{classfenetre}\index{fenetre@{fenetre}}
+
+
+{\ttfamily \#include $<$mafenetre.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfenetre_a6ecdf7dbb458321415297273b8e24e4f}{init\+\_\+window}} (const char $\ast$titre, int w, int h)
+\begin{DoxyCompactList}\small\item\em initialisation de la fenetre et le render \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{classfenetre_a386e988096055a2c489a14142a614e23}{get\+Rendere}} ()
+\begin{DoxyCompactList}\small\item\em cette fonction de type rendre a pour objectif de recupere le rendere \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfenetre_a6601e4c57e3f12564544aaaaee346dd8}{draw\+\_\+window}} (S\+D\+L\+\_\+\+Renderer $\ast$render)
+\begin{DoxyCompactList}\small\item\em cette procedure a pour objectif d\textquotesingle{}afficher la fenetre et dans la dernier il y a la boucle du jeux \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classfenetre_a8df92c67e3835eed89cb6ed39d31b7fd}{cleanup\+\_\+window}} ()
+\begin{DoxyCompactList}\small\item\em cette procedure a pour objectif de detruire en memoir tout ce qu\textquotesingle{}il a été declarer comme windows,render... \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfenetre_a8df92c67e3835eed89cb6ed39d31b7fd}\label{classfenetre_a8df92c67e3835eed89cb6ed39d31b7fd}} 
+\index{fenetre@{fenetre}!cleanup\_window@{cleanup\_window}}
+\index{cleanup\_window@{cleanup\_window}!fenetre@{fenetre}}
+\doxyparagraph{\texorpdfstring{cleanup\_window()}{cleanup\_window()}}
+{\footnotesize\ttfamily void fenetre\+::cleanup\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+cette procedure a pour objectif de detruire en memoir tout ce qu\textquotesingle{}il a été declarer comme windows,render... 
+
+\mbox{\Hypertarget{classfenetre_a6601e4c57e3f12564544aaaaee346dd8}\label{classfenetre_a6601e4c57e3f12564544aaaaee346dd8}} 
+\index{fenetre@{fenetre}!draw\_window@{draw\_window}}
+\index{draw\_window@{draw\_window}!fenetre@{fenetre}}
+\doxyparagraph{\texorpdfstring{draw\_window()}{draw\_window()}}
+{\footnotesize\ttfamily void fenetre\+::draw\+\_\+window (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{render }\end{DoxyParamCaption})}
+
+
+
+cette procedure a pour objectif d\textquotesingle{}afficher la fenetre et dans la dernier il y a la boucle du jeux 
+
+l\textquotesingle{}affichage de la fenetre et le rendere boucle de jeux
+
+
+\begin{DoxyParams}{Parameters}
+{\em render} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfenetre_a386e988096055a2c489a14142a614e23}\label{classfenetre_a386e988096055a2c489a14142a614e23}} 
+\index{fenetre@{fenetre}!getRendere@{getRendere}}
+\index{getRendere@{getRendere}!fenetre@{fenetre}}
+\doxyparagraph{\texorpdfstring{getRendere()}{getRendere()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer $\ast$ fenetre\+::get\+Rendere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+cette fonction de type rendre a pour objectif de recupere le rendere 
+
+brief description il est en prive on doit faire une fonction qui le retourne pour qu\textquotesingle{}on puisse l\textquotesingle{}utiliser
+
+\begin{DoxyReturn}{Returns}
+S\+D\+L\+\_\+\+Renderer$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfenetre_a6ecdf7dbb458321415297273b8e24e4f}\label{classfenetre_a6ecdf7dbb458321415297273b8e24e4f}} 
+\index{fenetre@{fenetre}!init\_window@{init\_window}}
+\index{init\_window@{init\_window}!fenetre@{fenetre}}
+\doxyparagraph{\texorpdfstring{init\_window()}{init\_window()}}
+{\footnotesize\ttfamily void fenetre\+::init\+\_\+window (\begin{DoxyParamCaption}\item[{const char $\ast$}]{titre,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+initialisation de la fenetre et le render 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titre} & \\
+\hline
+{\em w} & width \\
+\hline
+{\em h} & hight \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{mafenetre_8h}{mafenetre.\+h}}\item 
+src/\mbox{\hyperlink{mafenetre_8cpp}{mafenetre.\+cpp}}\end{DoxyCompactItemize}

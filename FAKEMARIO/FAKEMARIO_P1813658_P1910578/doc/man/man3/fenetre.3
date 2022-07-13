@@ -1,0 +1,77 @@
+.TH "fenetre" 3 "Tue May 17 2022" "Fake Mario" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+fenetre
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <mafenetre\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_window\fP (const char *titre, int w, int h)"
+.br
+.RI "initialisation de la fenetre et le render "
+.ti -1c
+.RI "SDL_Renderer * \fBgetRendere\fP ()"
+.br
+.RI "cette fonction de type rendre a pour objectif de recupere le rendere "
+.ti -1c
+.RI "void \fBdraw_window\fP (SDL_Renderer *render)"
+.br
+.RI "cette procedure a pour objectif d'afficher la fenetre et dans la dernier il y a la boucle du jeux "
+.ti -1c
+.RI "void \fBcleanup_window\fP ()"
+.br
+.RI "cette procedure a pour objectif de detruire en memoir tout ce qu'il a été declarer comme windows,render\&.\&.\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void fenetre::cleanup_window ()"
+
+.PP
+cette procedure a pour objectif de detruire en memoir tout ce qu'il a été declarer comme windows,render\&.\&.\&. 
+.SS "void fenetre::draw_window (SDL_Renderer * render)"
+
+.PP
+cette procedure a pour objectif d'afficher la fenetre et dans la dernier il y a la boucle du jeux l'affichage de la fenetre et le rendere boucle de jeux
+.PP
+\fBParameters\fP
+.RS 4
+\fIrender\fP 
+.RE
+.PP
+
+.SS "SDL_Renderer * fenetre::getRendere ()"
+
+.PP
+cette fonction de type rendre a pour objectif de recupere le rendere brief description il est en prive on doit faire une fonction qui le retourne pour qu'on puisse l'utiliser
+.PP
+\fBReturns\fP
+.RS 4
+SDL_Renderer* 
+.RE
+.PP
+
+.SS "void fenetre::init_window (const char * titre, int w, int h)"
+
+.PP
+initialisation de la fenetre et le render 
+.PP
+\fBParameters\fP
+.RS 4
+\fItitre\fP 
+.br
+\fIw\fP width 
+.br
+\fIh\fP hight 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Fake Mario from the source code\&.

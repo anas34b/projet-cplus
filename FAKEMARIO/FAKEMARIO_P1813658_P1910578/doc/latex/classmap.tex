@@ -1,0 +1,187 @@
+\hypertarget{classmap}{}\doxysubsection{map Class Reference}
+\label{classmap}\index{map@{map}}
+
+
+{\ttfamily \#include $<$map.\+h$>$}
+
+
+
+Collaboration diagram for map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{classmap__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmap_a1cb87acfa6bd0ea8004fae886dbbe251}{init\+\_\+map}} (S\+D\+L\+\_\+\+Renderer $\ast$rendere)
+\begin{DoxyCompactList}\small\item\em initialisation des tableaus des images de la map \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmap_a88ffb2f9284b3b71a6a4ab27f2177919}{draw\+\_\+map}} (S\+D\+L\+\_\+\+Renderer $\ast$rendere, float xj, float yj)
+\begin{DoxyCompactList}\small\item\em cette procedure a pour bute d\textquotesingle{}afficher les texture de la map dans des cordonnes précise et les stocke dans le tableaux de cordonnees \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdonne}{donne}} \mbox{\hyperlink{classmap_a58477939c6476d62cb7070c3b00fa274}{don}} \mbox{[}3\mbox{]}\mbox{[}20\mbox{]}
+\begin{DoxyCompactList}\small\item\em creation un tableau de class pour stocker les cordonnees des textures de la map \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classmap_a2de689e6b5ae21f2083596e295c84a6a}{ter}} \mbox{[}3\mbox{]}\mbox{[}20\mbox{]}
+\begin{DoxyCompactList}\small\item\em tableau pour stocker les niveaux \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classmap_a3280ae3f7a0156e53dbb8c30f5e80044}{sol}}
+\begin{DoxyCompactList}\small\item\em texture du sol \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classmap_a956e694c573d0932656656f19dab3419}{dst\+\_\+sol}}
+\begin{DoxyCompactList}\small\item\em regtangle du sol \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classmap_a9e4bbfd340e09a815da2f1df46409c91}{background}}
+\begin{DoxyCompactList}\small\item\em surface du background \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classmap_a831b2ee1ba2fffef40897aea0e3ea593}{mon\+Background}}
+\begin{DoxyCompactList}\small\item\em texture du background \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classmap_a27417ec2d3e1ca3836668d935a89d060}{src\+\_\+mon\+Background}}
+\begin{DoxyCompactList}\small\item\em rectangle de source du background \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{classmap_a66439c93fa3c47079a67074a2ad7934b}{dst\+\_\+mon\+Background}}
+\begin{DoxyCompactList}\small\item\em rectangle destination du background \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmap_a34b43c4ecce8de3a5228b7f4e6d66740}{width}}
+\begin{DoxyCompactList}\small\item\em pour stocker le h et w du background en temps réel \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmap_a2ab03d7b7b9bb7e0c0d99c670fa4d7d1}{hight}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmap_a88ffb2f9284b3b71a6a4ab27f2177919}\label{classmap_a88ffb2f9284b3b71a6a4ab27f2177919}} 
+\index{map@{map}!draw\_map@{draw\_map}}
+\index{draw\_map@{draw\_map}!map@{map}}
+\doxyparagraph{\texorpdfstring{draw\_map()}{draw\_map()}}
+{\footnotesize\ttfamily void map\+::draw\+\_\+map (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{rendere,  }\item[{float}]{xj,  }\item[{float}]{yj }\end{DoxyParamCaption})}
+
+
+
+cette procedure a pour bute d\textquotesingle{}afficher les texture de la map dans des cordonnes précise et les stocke dans le tableaux de cordonnees 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rendere} & \\
+\hline
+{\em xj} & \\
+\hline
+{\em yj} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmap_a1cb87acfa6bd0ea8004fae886dbbe251}\label{classmap_a1cb87acfa6bd0ea8004fae886dbbe251}} 
+\index{map@{map}!init\_map@{init\_map}}
+\index{init\_map@{init\_map}!map@{map}}
+\doxyparagraph{\texorpdfstring{init\_map()}{init\_map()}}
+{\footnotesize\ttfamily void map\+::init\+\_\+map (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Renderer $\ast$}]{rendere }\end{DoxyParamCaption})}
+
+
+
+initialisation des tableaus des images de la map 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rendere} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmap_a9e4bbfd340e09a815da2f1df46409c91}\label{classmap_a9e4bbfd340e09a815da2f1df46409c91}} 
+\index{map@{map}!background@{background}}
+\index{background@{background}!map@{map}}
+\doxyparagraph{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Surface$\ast$ map\+::background}
+
+
+
+surface du background 
+
+\mbox{\Hypertarget{classmap_a58477939c6476d62cb7070c3b00fa274}\label{classmap_a58477939c6476d62cb7070c3b00fa274}} 
+\index{map@{map}!don@{don}}
+\index{don@{don}!map@{map}}
+\doxyparagraph{\texorpdfstring{don}{don}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdonne}{donne}} map\+::don\mbox{[}3\mbox{]}\mbox{[}20\mbox{]}}
+
+
+
+creation un tableau de class pour stocker les cordonnees des textures de la map 
+
+\mbox{\Hypertarget{classmap_a66439c93fa3c47079a67074a2ad7934b}\label{classmap_a66439c93fa3c47079a67074a2ad7934b}} 
+\index{map@{map}!dst\_monBackground@{dst\_monBackground}}
+\index{dst\_monBackground@{dst\_monBackground}!map@{map}}
+\doxyparagraph{\texorpdfstring{dst\_monBackground}{dst\_monBackground}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect map\+::dst\+\_\+mon\+Background}
+
+
+
+rectangle destination du background 
+
+\mbox{\Hypertarget{classmap_a956e694c573d0932656656f19dab3419}\label{classmap_a956e694c573d0932656656f19dab3419}} 
+\index{map@{map}!dst\_sol@{dst\_sol}}
+\index{dst\_sol@{dst\_sol}!map@{map}}
+\doxyparagraph{\texorpdfstring{dst\_sol}{dst\_sol}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect map\+::dst\+\_\+sol}
+
+
+
+regtangle du sol 
+
+\mbox{\Hypertarget{classmap_a2ab03d7b7b9bb7e0c0d99c670fa4d7d1}\label{classmap_a2ab03d7b7b9bb7e0c0d99c670fa4d7d1}} 
+\index{map@{map}!hight@{hight}}
+\index{hight@{hight}!map@{map}}
+\doxyparagraph{\texorpdfstring{hight}{hight}}
+{\footnotesize\ttfamily int map\+::hight}
+
+\mbox{\Hypertarget{classmap_a831b2ee1ba2fffef40897aea0e3ea593}\label{classmap_a831b2ee1ba2fffef40897aea0e3ea593}} 
+\index{map@{map}!monBackground@{monBackground}}
+\index{monBackground@{monBackground}!map@{map}}
+\doxyparagraph{\texorpdfstring{monBackground}{monBackground}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ map\+::mon\+Background}
+
+
+
+texture du background 
+
+\mbox{\Hypertarget{classmap_a3280ae3f7a0156e53dbb8c30f5e80044}\label{classmap_a3280ae3f7a0156e53dbb8c30f5e80044}} 
+\index{map@{map}!sol@{sol}}
+\index{sol@{sol}!map@{map}}
+\doxyparagraph{\texorpdfstring{sol}{sol}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Texture$\ast$ map\+::sol}
+
+
+
+texture du sol 
+
+\mbox{\Hypertarget{classmap_a27417ec2d3e1ca3836668d935a89d060}\label{classmap_a27417ec2d3e1ca3836668d935a89d060}} 
+\index{map@{map}!src\_monBackground@{src\_monBackground}}
+\index{src\_monBackground@{src\_monBackground}!map@{map}}
+\doxyparagraph{\texorpdfstring{src\_monBackground}{src\_monBackground}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect map\+::src\+\_\+mon\+Background}
+
+
+
+rectangle de source du background 
+
+\mbox{\Hypertarget{classmap_a2de689e6b5ae21f2083596e295c84a6a}\label{classmap_a2de689e6b5ae21f2083596e295c84a6a}} 
+\index{map@{map}!ter@{ter}}
+\index{ter@{ter}!map@{map}}
+\doxyparagraph{\texorpdfstring{ter}{ter}}
+{\footnotesize\ttfamily float map\+::ter\mbox{[}3\mbox{]}\mbox{[}20\mbox{]}}
+
+
+
+tableau pour stocker les niveaux 
+
+\mbox{\Hypertarget{classmap_a34b43c4ecce8de3a5228b7f4e6d66740}\label{classmap_a34b43c4ecce8de3a5228b7f4e6d66740}} 
+\index{map@{map}!width@{width}}
+\index{width@{width}!map@{map}}
+\doxyparagraph{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int map\+::width}
+
+
+
+pour stocker le h et w du background en temps réel 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{map_8h}{map.\+h}}\item 
+src/\mbox{\hyperlink{map_8cpp}{map.\+cpp}}\end{DoxyCompactItemize}
